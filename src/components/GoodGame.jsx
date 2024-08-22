@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const GoodGame = ({ className = "" }) => {
   return (
     <div
-      className={`w-[325px] flex flex-col items-start justify-start gap-5 max-w-full text-left text-sm text-dimgray font-roboto ${className}`}
+      className={`w-full flex flex-col items-start justify-start gap-5 max-w-full text-left text-sm text-dimgray font-roboto ${className}`}
     >
       <div className="self-stretch relative tracking-[0.2px] leading-[20px]">
         As a matter of fact, this game is quite good when it comes to gameplay

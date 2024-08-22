@@ -22,11 +22,11 @@ const HeroGame2 = ({
 
   return (
     <section
-      className={`self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-10 box-border max-w-full text-left text-sm text-whitesmoke font-roboto ${className}`}
+      className={`w-full self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-10 box-border max-w-full text-left text-sm text-whitesmoke font-roboto ${className}`}
     >
       <div
-        className="flex-1 overflow-hidden flex flex-row items-start justify-start bg-[url('/hero-game@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full"
-        style={heroGameMobileStyle}
+        className="w-full flex-1 overflow-hidden flex flex-row items-start justify-start bg-[url('/hero-game@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full"
+        // style={heroGameMobileStyle}
       >
         <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[89px] px-[30px] pb-8 box-border gap-16 max-w-full">
           <div className="self-stretch flex flex-row items-start justify-center">

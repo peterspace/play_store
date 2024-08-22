@@ -819,7 +819,7 @@ const Laptop = ({ className = "" }) => {
               modes, but to one his own preference. Overall good!
             </div>
             <HelpfulReviewThree />
-            <div className="w-[325px] relative tracking-[0.2px] leading-[20px] inline-block max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
+            <div className="w-full relative tracking-[0.2px] leading-[20px] inline-block max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
             <SupportAndPolicy />
             <FrameComponent8 propTextDecoration="unset" />
             <SupportAndPolicy1 />

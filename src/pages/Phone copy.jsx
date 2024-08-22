@@ -12,7 +12,7 @@ import ChildrenGroup from "../components/ChildrenGroup";
 
 const Phone = () => {
   return (
-    <div className="w-screen relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
       <header className="w-full shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-row items-start justify-start py-1 px-5 gap-[45px] top-[0] z-[99] sticky text-left text-3xl text-dimgray font-roboto">
         <div className="flex flex-row items-start justify-start gap-[11px]">
           <img
@@ -61,9 +61,9 @@ const Phone = () => {
         actionIconContainers="/frame-11.svg"
         vector1="/vector-17.svg"
       />
-      <section className="w-full self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full text-left text-sm text-dimgray font-roboto">
+      <section className="self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full text-left text-sm text-dimgray font-roboto">
         <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
-          <div className="w-full overflow-x-auto flex flex-row items-start justify-start gap-10 max-w-full">
+          <div className="w-[335px] overflow-x-auto flex flex-row items-start justify-start gap-10 max-w-full">
             <img
               className="self-stretch w-[363px] relative rounded-lg max-h-full overflow-hidden shrink-0 object-cover min-h-[204px]"
               loading="lazy"
@@ -260,7 +260,7 @@ const Phone = () => {
                 7 August 2024
               </div>
             </div>
-            <div className="w-full relative tracking-[0.2px] leading-[20px] inline-block max-w-full">
+            <div className="w-[325px] relative tracking-[0.2px] leading-[20px] inline-block max-w-full">
               "I've been playing this playground game for a few months now, and
               it's been an absolute delight! The graphics are vibrant and
               engaging, the gameplay is smooth and intuitive, and there are
@@ -284,7 +284,7 @@ const Phone = () => {
             iconStartSmall3="/iconstartsmall-11.svg"
             iconStartSmall4="/iconstartsmall-11.svg"
           />
-          <div className="w-full flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-5 max-w-full">
+          <div className="w-[325px] flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-5 max-w-full">
             <div className="self-stretch relative tracking-[0.2px] leading-[20px]">
               Call Of Duty Mobile bringing familiar gameplay to mobile devices.
               The controls take some getting used to, but the game runs smoothly
@@ -316,7 +316,7 @@ const Phone = () => {
           />
         </div>
       </section>
-      <section className="w-full self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full">
+      <section className="self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full">
         <div className="flex-1 bg-white flex flex-col items-start justify-start gap-5 max-w-full">
           <div className="self-stretch flex flex-row flex-wrap items-start justify-start [row-gap:20px]">
             <SimilarGamesItem
