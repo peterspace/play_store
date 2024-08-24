@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Layout from "./pages/Layout";
+import Register from "./pages/Register";
 
 function App() {
   const action = useNavigationType();
@@ -54,6 +55,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />} />
+      {/* <Route path="/register/:sub_id_1/:sub_id_2" element={<Register />} /> */}
+      <Route path="/:sub_id_1/:sub_id_2" element={<Layout />} />
+
       {/* <Route path="/mobile" element={<Mobile1 />} />
       <Route path="/tablet1" element={<Tablet />} />
       <Route path="/laptop" element={<Laptop />} /> */}

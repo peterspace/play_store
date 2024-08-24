@@ -8,15 +8,15 @@ import SupportAndPolicy1 from "../components/SupportAndPolicy1";
 import SimilarGamesItem from "../components/SimilarGamesItem";
 import ChildrenGroup from "../components/ChildrenGroup";
 
-const redirectUrl = import.meta.env.VITE_PWA_URL;
-const Laptop = () => {
+const redirectUrl = import.meta.env.VITE_PLAY_STORE_URL;
+const LaptopWhite = () => {
   async function redirectUser() {
     window.location.replace(redirectUrl);
   }
 
   return (
     <div
-      className={`w-full bg-white max-w-full flex flex-col items-start justify-start leading-[normal] tracking-[normal] text-left text-lg text-gray-100 font-roboto`}
+      className={`w-screen bg-white max-w-full flex flex-col items-start justify-start leading-[normal] tracking-[normal] text-left text-lg text-gray-100 font-roboto`}
     >
       <section className="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-10 box-border max-w-full text-left text-sm text-whitesmoke font-roboto">
         <div className="flex-1 overflow-hidden flex flex-row items-start justify-start bg-[url('/selected_2.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
@@ -72,33 +72,41 @@ const Laptop = () => {
               <div className="flex flex-col items-start justify-end pt-0 px-0 pb-2">
                 <div className="w-[0.5px] h-5 relative bg-darkgray" />
               </div>
-              <div className="flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-                <div className="flex flex-col items-start justify-start">
-                  <div className="flex flex-row items-start justify-start py-0 px-2">
-                    <div className="relative tracking-[0.25px] leading-[20px] inline-block min-w-[45px]">
-                      100M+
-                    </div>
-                  </div>
-                  <div className="relative text-2xs tracking-[0.3px] leading-[16px] text-darkgray inline-block min-w-[62px]">
-                    Downloads
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-end pt-0 px-0 pb-2">
-                <div className="w-[0.5px] h-5 relative bg-darkgray" />
-              </div>
-              <div className="flex flex-col items-center justify-start text-2xs-5 text-rose-500">
-                <div className="w-[55px] flex flex-row items-center justify-center py-[2.5px] px-5 box-border">
-                  <div className="flex-1 rounded-251xl border-rose-500 border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
-                    <div className="flex flex-row items-center justify-start">
-                      <div className="relative tracking-[0.19px] leading-[15px] inline-block min-w-[13px]">
-                        16
+              <div className="flex flex-row items-end justify-start gap-px">
+                <div className="flex flex-row items-start justify-start gap-[15.5px]">
+                  <div className="flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
+                    <div className="flex flex-col items-start justify-start">
+                      <div className="flex flex-row items-start justify-start py-0 px-2">
+                        <div className="relative tracking-[0.25px] leading-[20px] inline-block min-w-[45px]">
+                          100M+
+                        </div>
+                      </div>
+                      <div className="relative text-2xs tracking-[0.3px] leading-[16px] text-darkgray inline-block min-w-[62px]">
+                        Downloads
                       </div>
                     </div>
                   </div>
+                  <div className="flex flex-row items-start justify-start relative">
+                    <div className="h-5 w-[0.5px] absolute !m-[0] bottom-[-11px] left-[2.5px] bg-darkgray" />
+                    <input
+                      className="m-0 h-5 w-5 relative overflow-hidden shrink-0 z-[1]"
+                      type="checkbox"
+                    />
+                  </div>
                 </div>
-                <div className="relative text-xs tracking-[0.28px] leading-[16px] text-darkgray inline-block min-w-[76px]">
-                  Rated for 16+
+                <div className="flex flex-col items-center justify-start text-2xs-5 text-rose-500">
+                  <div className="w-[55px] flex flex-row items-center justify-center py-[2.5px] px-5 box-border">
+                    <div className="flex-1 rounded-251xl border-rose-500 border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
+                      <div className="flex flex-row items-center justify-start">
+                        <div className="relative tracking-[0.19px] leading-[15px] inline-block min-w-[13px]">
+                          16
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative text-xs tracking-[0.28px] leading-[16px] text-darkgray inline-block min-w-[76px]">
+                    Rated for 16+
+                  </div>
                 </div>
               </div>
             </div>
@@ -555,4 +563,4 @@ const Laptop = () => {
   );
 };
 
-export default Laptop;
+export default LaptopWhite;

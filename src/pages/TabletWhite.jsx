@@ -2,9 +2,8 @@ import HeaderTablet from "../components/HeaderTablet";
 import FrameComponent9 from "../components/FrameComponent9";
 import ReviewFeedbackOne from "../components/ReviewFeedbackOne";
 import FrameComponent10 from "../components/FrameComponent10";
-const redirectUrl = import.meta.env.VITE_PWA_URL;
-
-const Tablet = () => {
+const redirectUrl = import.meta.env.VITE_PLAY_STORE_URL;
+const TabletWhite = () => {
   async function redirectUser() {
     window.location.replace(redirectUrl);
   }
@@ -59,9 +58,9 @@ const Tablet = () => {
                   </div>
                 </div>
                 {/* <img
-                  className="h-5 w-5 absolute !m-[0] top-[39px] right-[73px] overflow-hidden shrink-0 z-[1]"
-                  alt=""
-                /> */}
+                className="h-5 w-5 absolute !m-[0] top-[39px] right-[73px] overflow-hidden shrink-0 z-[1]"
+                alt=""
+              /> */}
               </div>
               <div className="w-full flex flex-row items-start justify-start gap-[18px] text-sm">
                 <div className="flex-1 flex flex-col items-start justify-start">
@@ -266,4 +265,4 @@ const Tablet = () => {
   );
 };
 
-export default Tablet;
+export default TabletWhite;

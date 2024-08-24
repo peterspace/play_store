@@ -235,10 +235,7 @@ const SessionSafetyPhone = (props) => {
           </div>
         </div>
       </div>
-      <div
-        className="self-stretch flex flex-col items-start justify-start gap-5 max-w-full"
-        style={sessionSafety2Style}
-      >
+      <div className="self-stretch flex flex-col items-start justify-start gap-5 max-w-full">
         <div className="self-stretch flex flex-row items-center justify-between gap-5 text-gray-100">
           <div className="flex flex-row items-start justify-start">
             <div className="relative leading-[24px]">Data safety</div>

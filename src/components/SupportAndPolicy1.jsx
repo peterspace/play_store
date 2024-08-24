@@ -13,14 +13,6 @@ const SupportAndPolicy1 = ({ className = "" }) => {
           Privacy Policy
         </a>
       </div>
-      <div className="flex flex-row items-start justify-start gap-5 text-lg">
-        <div className="relative leading-[24px] inline-block min-w-[115px]">
-          Similar games
-        </div>
-        <div className="overflow-hidden flex flex-col items-start justify-start py-[5px] px-1 box-border w-6 h-6">
-          <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
-        </div>
-      </div>
     </div>
   );
 };

@@ -1,15 +1,16 @@
 import { useMemo } from "react";
-import PropTypes from "prop-types";
 
-const HeroGame2 = ({
-  className = "",
-  heroGameMobileBackgroundImage,
-  vector,
-  similarImage,
-  iconStartSmall,
-  actionIconContainers,
-  vector1,
-}) => {
+const HeroGame2 = (props) => {
+  const {
+    className = "",
+    heroGameMobileBackgroundImage,
+    vector,
+    similarImage,
+    iconStartSmall,
+    actionIconContainers,
+    vector1,
+    redirectUrl,
+  } = props;
   const heroGameMobileStyle = useMemo(() => {
     return {
       backgroundImage: heroGameMobileBackgroundImage,
@@ -17,7 +18,7 @@ const HeroGame2 = ({
   }, [heroGameMobileBackgroundImage]);
 
   async function redirectUser() {
-    window.location.replace("https://pwa-plinsters.onrender.com");
+    window.location.replace(redirectUrl);
   }
 
   return (
@@ -42,7 +43,10 @@ const HeroGame2 = ({
             </button>
           </div>
           <div className="self-stretch flex flex-col items-start justify-start gap-[22px]">
-            <div className="w-[282px] flex flex-row items-start justify-start relative gap-2 text-5xl">
+            <div
+              // className="w-[282px] flex flex-row items-start justify-start relative gap-2 text-5xl"
+              className="w-full flex flex-row items-start justify-start relative gap-2 text-5xl"
+            >
               <img
                 className="h-14 w-14 relative rounded-xl overflow-hidden shrink-0 object-cover"
                 loading="lazy"
@@ -69,10 +73,10 @@ const HeroGame2 = ({
                   </div>
                 </div>
               </div>
-              <img
+              {/* <img
                 className="h-5 w-5 absolute !m-[0] top-[39px] right-[73px] overflow-hidden shrink-0 z-[1]"
                 alt=""
-              />
+              /> */}
             </div>
             <div className="w-[286px] flex flex-row items-start justify-start gap-[18px]">
               <div className="flex-1 flex flex-col items-start justify-start">
@@ -110,9 +114,9 @@ const HeroGame2 = ({
               <div className="flex flex-col items-start justify-start pt-2 px-0 pb-0">
                 <div className="w-[0.5px] h-5 relative bg-darkgray" />
               </div>
-              <div className="flex-1 flex flex-col items-center justify-start text-2xs-5 text-orange">
+              <div className="flex-1 flex flex-col items-center justify-start text-2xs-5 text-rose-500">
                 <div className="w-[55px] flex flex-row items-center justify-center py-[2.5px] px-5 box-border">
-                  <div className="flex-1 rounded-251xl border-orange border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
+                  <div className="flex-1 rounded-251xl border-rose-500 border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
                     <div className="flex flex-row items-center justify-start">
                       <div className="relative tracking-[0.19px] leading-[15px] inline-block min-w-[13px]">
                         16
@@ -125,7 +129,10 @@ const HeroGame2 = ({
                 </div>
               </div>
             </div>
-            <button className="cursor-pointer hover:opacity-80 [border:none] py-2 pl-[21px] pr-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center"  onClick={redirectUser}>
+            <button
+              className="cursor-pointer hover:opacity-80 [border:none] py-2 pl-[21px] pr-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center"
+              onClick={redirectUser}
+            >
               <div className="relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-gray-100 text-left inline-block min-w-[40px]">
                 Install
               </div>
@@ -198,18 +205,6 @@ const HeroGame2 = ({
       </div>
     </section>
   );
-};
-
-HeroGame2.propTypes = {
-  className: PropTypes.string,
-  vector: PropTypes.string,
-  similarImage: PropTypes.string,
-  iconStartSmall: PropTypes.string,
-  actionIconContainers: PropTypes.string,
-  vector1: PropTypes.string,
-
-  /** Style props */
-  heroGameMobileBackgroundImage: PropTypes.any,
 };
 
 export default HeroGame2;

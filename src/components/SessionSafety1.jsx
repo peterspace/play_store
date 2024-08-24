@@ -184,10 +184,7 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div
-            className="rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]"
-            style={buttonInactiveStyle}
-          >
+          <div className="rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[83px]">
@@ -196,10 +193,7 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div
-            className="w-[100px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]"
-            style={buttonInactive1Style}
-          >
+          <div className="w-[100px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[76px]">

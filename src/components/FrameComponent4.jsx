@@ -61,14 +61,6 @@ const FrameComponent4 = ({ className = "", globeEmail, vector1 }) => {
           Privacy Policy
         </a>
       </div>
-      <div className="self-stretch flex flex-row items-start justify-start relative text-lg">
-        <div className="relative leading-[24px] inline-block min-w-[115px]">
-          Similar games
-        </div>
-        <div className="!m-[0] absolute h-6 top-[0px] right-[0px] bottom-[0px] overflow-hidden flex flex-col items-start justify-start py-[5px] px-1 box-border w-6">
-          <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
-        </div>
-      </div>
     </div>
   );
 };
