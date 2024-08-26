@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const ChildrenGroup = ({ className = "" }) => {
   return (
     <div
-      className={`flex flex-col items-start justify-start text-left text-sm text-dimgray font-helvetica ${className}`}
+      className={`flex flex-col items-start justify-start text-left text-sm text-dimgray font-roboto ${className}`}
     >
       <div className="flex flex-row items-start justify-start">
         <div className="relative tracking-[0.25px] leading-[32px] inline-block min-w-[125px]">

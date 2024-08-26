@@ -15,13 +15,9 @@ const HeroGame = ({
     };
   }, [heroGameAlignSelf, heroGameBackgroundImage, heroGameFlex]);
 
-  async function redirectUser() {
-    window.location.replace("https://pwa-plinsters.onrender.com");
-  }
-
   return (
     <section
-      className={`self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/public/hero-game@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-left text-sm text-whitesmoke font-roboto ${className}`}
+      className={`self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/hero-game@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-left text-sm text-whitesmoke-200 font-roboto ${className}`}
       style={heroGameStyle}
     >
       <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[109px] pb-[30px] pl-[23px] pr-0 box-border gap-16 max-w-full">
@@ -35,7 +31,7 @@ const HeroGame = ({
               />
             </div>
             <div className="flex-1 flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
-              <div className="self-stretch relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-whitesmoke text-left">
+              <div className="self-stretch relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-whitesmoke-200 text-left">
                 Trailer
               </div>
             </div>
@@ -138,7 +134,7 @@ const HeroGame = ({
               </div>
             </div>
             <div className="self-stretch flex flex-col items-start justify-start gap-3 text-seagreen-200">
-              <button className="cursor-pointer hover:opacity-80 [border:none] py-2 pl-[21px] pr-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center"  onClick={redirectUser}>
+              <button className="cursor-pointer [border:none] py-2 pl-[21px] pr-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center">
                 <div className="relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-gray-100 text-left inline-block min-w-[40px]">
                   Install
                 </div>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const FrameComponent1 = ({ className = "" }) => {
   return (
     <div
-      className={`self-stretch flex flex-col items-start justify-start gap-px max-w-full text-left text-xs text-dimgray font-helvetica ${className}`}
+      className={`self-stretch flex flex-col items-start justify-start gap-px max-w-full text-left text-xs text-dimgray font-roboto ${className}`}
     >
       <div className="flex flex-row items-start justify-start py-0 px-6 box-border max-w-full">
         <div className="flex flex-row items-start justify-start gap-2">

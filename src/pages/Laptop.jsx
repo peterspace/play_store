@@ -1,3 +1,4 @@
+import { useState } from "react";
 import SessionSafety1 from "../components/SessionSafety1";
 import ReviewsContent from "../components/ReviewsContent";
 import ReviewFeedbackOne from "../components/ReviewFeedbackOne";
@@ -5,11 +6,10 @@ import HelpfulReviewThree from "../components/HelpfulReviewThree";
 import SupportAndPolicy from "../components/SupportAndPolicy";
 import FrameComponent8 from "../components/FrameComponent8";
 import SupportAndPolicy1 from "../components/SupportAndPolicy1";
-import SimilarGamesItem from "../components/SimilarGamesItem";
-import ChildrenGroup from "../components/ChildrenGroup";
 
 const redirectUrl = import.meta.env.VITE_PWA_URL;
 const Laptop = () => {
+  const [isAppSupport, setIsAppSupport] = useState(false);
   async function redirectUser() {
     window.location.replace(redirectUrl);
   }
@@ -18,7 +18,7 @@ const Laptop = () => {
     <div
       className={`w-full bg-white max-w-full flex flex-col items-start justify-start leading-[normal] tracking-[normal] text-left text-lg text-gray-100 font-roboto`}
     >
-      <section className="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-10 box-border max-w-full text-left text-sm text-whitesmoke font-roboto">
+      <section className="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-10 box-border max-w-full text-left text-sm text-whitesmoke-200 font-roboto">
         <div className="flex-1 overflow-hidden flex flex-row items-start justify-start bg-[url('/selected_2.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
           <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_41%,_#202124_71.5%)] overflow-hidden flex flex-col items-start justify-start pt-[277px] px-[30px] pb-8 box-border gap-[39px] max-w-full mq725:gap-[19px] mq725:pt-[180px] mq725:pb-[21px] mq725:box-border">
             <div className="w-[282px] flex flex-row items-start justify-start gap-2 text-5xl">
@@ -185,7 +185,7 @@ const Laptop = () => {
         </div>
       </section>
       <section className="flex flex-row items-start justify-start pt-0 px-10 pb-5 box-border max-w-full">
-        <div className="w-[1030px] overflow-x-auto shrink-0 flex flex-row items-start justify-start gap-10 max-w-full mq725:gap-5">
+        <div className="w-full overflow-x-auto shrink-0 flex flex-row items-start justify-start gap-10 max-w-full mq725:gap-5">
           <img
             className="self-stretch w-[363px] relative rounded-lg max-h-full overflow-hidden shrink-0 object-cover min-h-[204px] max-w-full"
             loading="lazy"
@@ -276,13 +276,13 @@ const Laptop = () => {
                     />
                   </div>
                   <div className="flex flex-row items-start justify-start">
-                    <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray text-left inline-block min-w-[41px]">
+                    <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray-100 text-left inline-block min-w-[41px]">
                       Phone
                     </div>
                   </div>
                 </div>
               </button>
-              <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center">
+              <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center">
                 <div className="flex flex-row items-center justify-start gap-2">
                   <div className="w-[15px] overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[1.9px] px-0 pb-[1.8px] box-border">
                     <img
@@ -298,7 +298,7 @@ const Laptop = () => {
                   </div>
                 </div>
               </button>
-              <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
+              <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
                 <div className="flex flex-row items-center justify-start gap-2">
                   <div className="overflow-hidden flex flex-row items-center justify-start">
                     <img
@@ -314,7 +314,7 @@ const Laptop = () => {
                   </div>
                 </div>
               </button>
-              <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[87px] rounded-9980xl box-border flex flex-col items-center justify-center">
+              <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[87px] rounded-9980xl box-border flex flex-col items-center justify-center">
                 <div className="flex flex-row items-center justify-start gap-2">
                   <div className="w-[15px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-[0.6px] px-px box-border h-[15px]">
                     <img
@@ -541,16 +541,24 @@ const Laptop = () => {
             </div>
             <HelpfulReviewThree />
             <div className="w-full relative tracking-[0.2px] leading-[20px] inline-block max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
-            <SupportAndPolicy />
-            <FrameComponent8 propTextDecoration="unset" />
-            <SupportAndPolicy1 />
+            <SupportAndPolicy
+              isAppSupport={isAppSupport}
+              setIsAppSupport={setIsAppSupport}
+            />
+            {isAppSupport && (
+              <>
+                <FrameComponent8 propTextDecoration="unset" />
+                <SupportAndPolicy1 isAppSupport={isAppSupport} />
+              </>
+            )}
+
             <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-1 gap-6 mt-[40px] mb-[80px]">
-              <div className="self-stretch h-px relative bg-whitesmoke" />
+              <div className="self-stretch h-px relative bg-whitesmoke-200" />
             </div>
           </div>
         </div>
       </section>
-      <div className="self-stretch h-px relative bg-whitesmoke" />
+      <div className="self-stretch h-px relative bg-whitesmoke-200" />
     </div>
   );
 };

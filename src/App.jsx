@@ -5,8 +5,10 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+
+import BlackPage from "./pages/BlackPage";
+import WhitePage from "./pages/WhitePage";
 import Layout from "./pages/Layout";
-import Register from "./pages/Register";
 
 function App() {
   const action = useNavigationType();
@@ -28,11 +30,51 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/":
+        title = "";
+        metaDescription = "";
+        break;
       case "/mobile":
         title = "";
         metaDescription = "";
         break;
+      case "/mobile-2":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/tablet":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/phone":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/phone1":
+        title = "";
+        metaDescription = "";
+        break;
       case "/tablet1":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/laptop-white":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/desktop-white":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/phone-pop-over":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/phone-pop-install-middle":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/phone-pop-install":
         title = "";
         metaDescription = "";
         break;
@@ -55,13 +97,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />} />
-      {/* <Route path="/register/:sub_id_1/:sub_id_2" element={<Register />} /> */}
       <Route path="/:sub_id_1/:sub_id_2" element={<Layout />} />
-
-      {/* <Route path="/mobile" element={<Mobile1 />} />
-      <Route path="/tablet1" element={<Tablet />} />
-      <Route path="/laptop" element={<Laptop />} /> */}
+      <Route path="/black" element={<BlackPage />} />
+      <Route path="/white" element={<WhitePage />} />
     </Routes>
   );
 }
 export default App;
+//

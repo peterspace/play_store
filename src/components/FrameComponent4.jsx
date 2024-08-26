@@ -5,8 +5,8 @@ const FrameComponent4 = ({ className = "", globeEmail, vector1 }) => {
     <div
       className={`self-stretch flex flex-col items-start justify-start gap-5 max-w-full text-left text-sm text-gray-100 font-roboto ${className}`}
     >
-      <div className="w-full relative tracking-[0.2px] leading-[20px] text-dimgray inline-block max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
-      <div className="w-full flex flex-row items-start justify-start relative max-w-full text-lg">
+      <div className="w-[325px] relative tracking-[0.2px] leading-[20px] text-dimgray inline-block max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
+      <div className="w-[326px] flex flex-row items-start justify-start relative max-w-full text-lg">
         <div className="relative leading-[24px] inline-block min-w-[99px]">
           App support
         </div>
@@ -60,6 +60,14 @@ const FrameComponent4 = ({ className = "", globeEmail, vector1 }) => {
         <a className="[text-decoration:none] flex-1 relative tracking-[0.25px] leading-[20px] text-[inherit]">
           Privacy Policy
         </a>
+      </div>
+      <div className="self-stretch flex flex-row items-start justify-start relative text-lg">
+        <div className="relative leading-[24px] inline-block min-w-[115px]">
+          Similar games
+        </div>
+        <div className="!m-[0] absolute h-6 top-[0px] right-[0px] bottom-[0px] overflow-hidden flex flex-col items-start justify-start py-[5px] px-1 box-border w-6">
+          <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
+        </div>
       </div>
     </div>
   );

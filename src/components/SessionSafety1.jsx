@@ -125,17 +125,17 @@ const SessionSafety1 = ({
       className={`self-stretch flex flex-col items-start justify-start gap-5 max-w-full text-left text-lg text-dimgray font-roboto ${className}`}
       style={sessionSafety1Style}
     >
-      <div className="self-stretch flex flex-row items-center justify-start py-0 pl-0 pr-[344px] gap-5 text-gray-100 mq450:pr-5 mq450:box-border mq600:pr-[172px] mq600:box-border">
-        <div className="flex flex-row items-start justify-start gap-5 text-lg">
-          <div className="relative leading-[24px] inline-block min-w-[115px]">
-            About this game
-          </div>
-          <div className="overflow-hidden flex flex-col items-start justify-start py-[5px] px-1 box-border w-6 h-6">
-            <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
-          </div>
+      <div
+        className="self-stretch flex flex-row items-center justify-start py-0 pl-0 pr-[344px] gap-5 text-gray-100 mq450:pr-5 mq450:box-border mq600:pr-[172px] mq600:box-border"
+        style={safetyHeader2Style}
+      >
+        <div className="flex flex-row items-start justify-start">
+          <div className="relative leading-[24px]">About this game</div>
+        </div>
+        <div className="overflow-hidden flex flex-col items-start justify-start py-[5px] px-1">
+          <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
         </div>
       </div>
-
       <div
         className="self-stretch overflow-hidden flex flex-row items-start justify-start pt-0 px-0 pb-5 box-border max-w-full text-smi"
         style={sectionDescription2Style}
@@ -163,10 +163,10 @@ const SessionSafety1 = ({
       </div>
       <div className="self-stretch flex flex-col items-start justify-start text-sm">
         <div
-          className="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pl-0 pr-[55px] box-border gap-2.5 min-h-[70px]"
+          className="self-stretch flex flex-row items-center justify-start flex-wrap content-center py-0 pl-0 pr-[55px] box-border gap-2.5 min-h-[70px]"
           style={featuresRow1Style}
         >
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[78px] rounded-9980xl box-border flex flex-col items-center justify-center">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[78px] rounded-9980xl box-border flex flex-col items-center justify-center">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-dimgray text-left inline-block min-w-[54px]">
@@ -175,7 +175,7 @@ const SessionSafety1 = ({
               </div>
             </div>
           </button>
-          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[41px]">
@@ -184,7 +184,10 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div className="rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
+          <div
+            className="rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]"
+            // style={buttonInactiveStyle}
+          >
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[83px]">
@@ -193,7 +196,10 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div className="w-[100px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div
+            className="w-[100px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]"
+            // style={buttonInactive1Style}
+          >
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[76px]">
@@ -202,7 +208,7 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div className="w-[75px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div className="w-[75px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[51px]">
@@ -211,7 +217,7 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-2.5">
+          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-2.5">
             <div className="w-[43px] flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[42px]">
@@ -220,7 +226,7 @@ const SessionSafety1 = ({
               </div>
             </div>
           </div>
-          <div className="w-[74px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div className="w-[74px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[50px]">
@@ -235,14 +241,17 @@ const SessionSafety1 = ({
         className="self-stretch flex flex-col items-start justify-start gap-5 max-w-full"
         style={sessionSafety2Style}
       >
-        <div className="self-stretch flex flex-row items-center justify-start py-0 pl-0 pr-[344px] gap-5 text-gray-100 mq450:pr-5 mq450:box-border mq600:pr-[172px] mq600:box-border">
-          <div className="flex flex-row items-start justify-start gap-5 text-lg">
-            <div className="relative leading-[24px] inline-block min-w-[115px]">
+        <div
+          className="self-stretch flex flex-row items-center justify-start py-0 pl-0 pr-[385px] gap-5 text-gray-100 mq450:pr-5 mq450:box-border mq600:pr-48 mq600:box-border"
+          style={safetyHeader3Style}
+        >
+          <div className="flex flex-row items-start justify-start">
+            <div className="relative leading-[24px] inline-block min-w-[91px]">
               Data safety
             </div>
-            <div className="overflow-hidden flex flex-col items-start justify-start py-[5px] px-1 box-border w-6 h-6">
-              <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
-            </div>
+          </div>
+          <div className="overflow-hidden flex flex-col items-start justify-start py-[5px] px-1">
+            <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
           </div>
         </div>
         <div
@@ -256,10 +265,10 @@ const SessionSafety1 = ({
             may update it over time.
           </div>
         </div>
-        <div className="self-stretch rounded-lg border-gainsboro border-[1px] border-solid flex flex-col items-start justify-start py-[18px] px-[19px] gap-5 text-sm">
+        <div className="self-stretch rounded-lg border-gainsboro-200 border-[1px] border-solid flex flex-col items-start justify-start py-[18px] px-[19px] gap-5 text-sm">
           <div className="self-stretch flex flex-col items-start justify-start gap-5">
             <div
-              className="self-stretch flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-[180px] gap-5 mq600:pr-[90px] mq600:box-border"
+              className="self-stretch flex flex-row items-start justify-start flex-wrap content-start py-0 pl-0 pr-[180px] gap-5 mq600:pr-[90px] mq600:box-border"
               style={safetyContent2Style}
             >
               <div className="overflow-hidden flex flex-row items-center justify-start p-0.5">

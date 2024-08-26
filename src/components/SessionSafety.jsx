@@ -1,132 +1,104 @@
 import { useMemo } from "react";
 import PropTypes from "prop-types";
 
-const SessionSafetyPhone = (props) => {
-  const {
-    className = "",
-    propAlignSelf,
-    propFlex,
-    propPadding,
-    propPadding1,
-    propHeight,
-    propMinHeight,
-    propFlex1,
-    propMinWidth,
-    propWidth,
-    propFlex2,
-    propMinWidth1,
-    propAlignSelf1,
-    propWidth1,
-    propPadding2,
-    propPadding3,
-    propFlexWrap,
-    propFlex3,
-    propMinWidth2,
-    propWidth2,
-    propAlignSelf2,
-    propWidth3,
-    propAlignSelf3,
-    propAlignSelf4,
-  } = props;
-  const sessionSafetyPhoneStyle = useMemo(() => {
-    return {
-      alignSelf: propAlignSelf,
-      flex: propFlex,
-    };
-  }, [propAlignSelf, propFlex]);
-
-  const safetyHeader2Style = useMemo(() => {
+const SessionSafety = ({
+  className = "",
+  propPadding,
+  propHeight,
+  propPadding1,
+  propMinHeight,
+  propWidth,
+  propAlignSelf,
+  propPadding2,
+  propPadding3,
+  propFlexWrap,
+  propWidth1,
+  propFlex,
+  propMinWidth,
+  propAlignSelf1,
+  propAlignSelf2,
+  propWidth2,
+  propAlignSelf3,
+}) => {
+  const safetyHeaderStyle = useMemo(() => {
     return {
       padding: propPadding,
     };
   }, [propPadding]);
 
-  const sectionDescription2Style = useMemo(() => {
+  const sectionDescriptionStyle = useMemo(() => {
     return {
-      padding: propPadding1,
       height: propHeight,
+      padding: propPadding1,
     };
-  }, [propPadding1, propHeight]);
+  }, [propHeight, propPadding1]);
 
-  const featuresRow1Style = useMemo(() => {
+  const featuresRowStyle = useMemo(() => {
     return {
       minHeight: propMinHeight,
     };
   }, [propMinHeight]);
 
-  const buttonInactiveStyle = useMemo(() => {
-    return {
-      flex: propFlex1,
-      minWidth: propMinWidth,
-    };
-  }, [propFlex1, propMinWidth]);
-
-  const buttonInactive1Style = useMemo(() => {
+  const sessionSafetyStyle = useMemo(() => {
     return {
       width: propWidth,
-      flex: propFlex2,
-      minWidth: propMinWidth1,
+      alignSelf: propAlignSelf,
     };
-  }, [propWidth, propFlex2, propMinWidth1]);
+  }, [propWidth, propAlignSelf]);
 
-  const sessionSafety2Style = useMemo(() => {
-    return {
-      alignSelf: propAlignSelf1,
-      width: propWidth1,
-    };
-  }, [propAlignSelf1, propWidth1]);
-
-  const safetyHeader3Style = useMemo(() => {
+  const safetyHeader1Style = useMemo(() => {
     return {
       padding: propPadding2,
     };
   }, [propPadding2]);
 
-  const sectionDescription3Style = useMemo(() => {
+  const sectionDescription1Style = useMemo(() => {
     return {
       padding: propPadding3,
     };
   }, [propPadding3]);
 
-  const safetyContent2Style = useMemo(() => {
+  const safetyContentStyle = useMemo(() => {
     return {
       flexWrap: propFlexWrap,
     };
   }, [propFlexWrap]);
 
-  const safetyItem1Style = useMemo(() => {
+  const safetyItemStyle = useMemo(() => {
     return {
-      flex: propFlex3,
-      minWidth: propMinWidth2,
-      width: propWidth2,
+      width: propWidth1,
+      flex: propFlex,
+      minWidth: propMinWidth,
     };
-  }, [propFlex3, propMinWidth2, propWidth2]);
+  }, [propWidth1, propFlex, propMinWidth]);
 
-  const heading41Style = useMemo(() => {
+  const heading4Style = useMemo(() => {
+    return {
+      alignSelf: propAlignSelf1,
+    };
+  }, [propAlignSelf1]);
+
+  const safetyContent1Style = useMemo(() => {
     return {
       alignSelf: propAlignSelf2,
+      width: propWidth2,
     };
-  }, [propAlignSelf2]);
+  }, [propAlignSelf2, propWidth2]);
 
-  const safetyContent3Style = useMemo(() => {
+  const heading3Style = useMemo(() => {
     return {
-      width: propWidth3,
       alignSelf: propAlignSelf3,
     };
-  }, [propWidth3, propAlignSelf3]);
-
-  const heading31Style = useMemo(() => {
-    return {
-      alignSelf: propAlignSelf4,
-    };
-  }, [propAlignSelf4]);
+  }, [propAlignSelf3]);
 
   return (
     <div
       className={`self-stretch flex flex-col items-start justify-start gap-5 max-w-full text-left text-lg text-dimgray font-roboto ${className}`}
-      style={sessionSafetyPhoneStyle}
     >
-      <div className="self-stretch flex flex-row items-center justify-between gap-5 text-gray-100">
+      <div
+        className="self-stretch flex flex-row items-center justify-between gap-5 text-gray-100"
+        style={safetyHeaderStyle}
+      >
         <div className="flex flex-row items-start justify-start">
           <div className="relative leading-[24px]">About this game</div>
         </div>
@@ -135,8 +107,8 @@ const SessionSafetyPhone = (props) => {
         </div>
       </div>
       <div
-        className="self-stretch overflow-hidden flex flex-row items-start justify-start pt-0 px-0 pb-5 box-border max-w-full text-smi"
-        style={sectionDescription2Style}
+        className="self-stretch h-[120px] overflow-hidden shrink-0 flex flex-row items-start justify-start max-w-full text-smi"
+        style={sectionDescriptionStyle}
       >
         <div className="flex-1 relative tracking-[0.2px] leading-[20px] inline-block max-w-full">
           Join your friends in Mobile Legends: Bang Bang, the brand new 5v5 MOBA
@@ -161,10 +133,10 @@ const SessionSafetyPhone = (props) => {
       </div>
       <div className="self-stretch flex flex-col items-start justify-start text-sm">
         <div
-          className="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pl-0 pr-[55px] box-border gap-2.5 min-h-[70px]"
-          style={featuresRow1Style}
+          className="self-stretch flex flex-row items-center justify-start flex-wrap content-center py-0 pl-0 pr-[65px] box-border gap-2.5 min-h-[110px]"
+          style={featuresRowStyle}
         >
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[78px] rounded-9980xl box-border flex flex-col items-center justify-center">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[78px] rounded-9980xl box-border flex flex-col items-center justify-center">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-dimgray text-left inline-block min-w-[54px]">
@@ -173,7 +145,7 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
           </button>
-          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[41px]">
@@ -182,10 +154,7 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
           </div>
-          <div
-            className="rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]"
-            style={buttonInactiveStyle}
-          >
+          <div className="rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[83px]">
@@ -194,10 +163,7 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
           </div>
-          <div
-            className="w-[100px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]"
-            style={buttonInactive1Style}
-          >
+          <div className="w-[100px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[76px]">
@@ -206,7 +172,7 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
           </div>
-          <div className="w-[75px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div className="w-[75px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[51px]">
@@ -215,7 +181,7 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
           </div>
-          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-2.5">
+          <div className="w-[65px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-2.5">
             <div className="w-[43px] flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[42px]">
@@ -224,7 +190,7 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
           </div>
-          <div className="w-[74px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+          <div className="w-[74px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
             <div className="flex flex-row items-center justify-start">
               <div className="flex flex-row items-start justify-start">
                 <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[50px]">
@@ -235,18 +201,31 @@ const SessionSafetyPhone = (props) => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex flex-col items-start justify-start gap-5 max-w-full">
-        <div className="self-stretch flex flex-row items-center justify-between gap-5 text-gray-100">
+      <div
+        className="w-[326px] flex flex-col items-start justify-start gap-5 max-w-full"
+        style={sessionSafetyStyle}
+      >
+        <div
+          className="self-stretch flex flex-row items-center justify-between gap-5 text-gray-100"
+          style={safetyHeader1Style}
+        >
           <div className="flex flex-row items-start justify-start">
-            <div className="relative leading-[24px]">Data safety</div>
+            <div className="relative leading-[24px] inline-block min-w-[91px]">
+              Data safety
+            </div>
           </div>
           <div className="overflow-hidden flex flex-col items-start justify-start py-[5px] px-1">
-            <img className="w-4 h-3.5 relative" alt="" src="/vector-5.svg" />
+            <img
+              className="w-4 h-3.5 relative"
+              loading="lazy"
+              alt=""
+              src="/vector-5.svg"
+            />
           </div>
         </div>
         <div
-          className="self-stretch overflow-hidden flex flex-row items-start justify-start pt-0 px-0 pb-10 box-border max-w-full text-smi"
-          style={sectionDescription3Style}
+          className="self-stretch overflow-hidden flex flex-row items-start justify-start max-w-full text-smi"
+          style={sectionDescription1Style}
         >
           <div className="flex-1 relative tracking-[0.2px] leading-[20px] inline-block max-w-full">
             Safety starts with understanding how developers collect and share
@@ -255,22 +234,23 @@ const SessionSafetyPhone = (props) => {
             may update it over time.
           </div>
         </div>
-        <div className="self-stretch rounded-lg border-gainsboro border-[1px] border-solid flex flex-col items-start justify-start py-[18px] px-[19px] gap-5 text-sm">
+        <div className="self-stretch rounded-lg border-gainsboro-200 border-[1px] border-solid flex flex-col items-start justify-start py-[18px] px-[19px] gap-5 text-sm">
           <div className="self-stretch flex flex-col items-start justify-start gap-5">
             <div
-              className="self-stretch flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-[180px] gap-5 mq600:pr-[90px] mq600:box-border"
-              style={safetyContent2Style}
+              className="self-stretch flex flex-row items-start justify-start py-0 px-0 gap-5"
+              style={safetyContentStyle}
             >
               <div className="overflow-hidden flex flex-row items-center justify-start p-0.5">
                 <img
                   className="h-5 w-[18px] relative"
+                  loading="lazy"
                   alt=""
-                  src="/vector-51.svg"
+                  src="/vector-7.svg"
                 />
               </div>
               <div
-                className="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[168px]"
-                style={safetyItem1Style}
+                className="w-[258px] flex flex-col items-start justify-start gap-[5px] shrink-0"
+                style={safetyItemStyle}
               >
                 <div className="self-stretch flex flex-row items-start justify-start">
                   <div className="relative tracking-[0.2px] leading-[20px]">
@@ -278,8 +258,8 @@ const SessionSafetyPhone = (props) => {
                   </div>
                 </div>
                 <div
-                  className="self-stretch flex flex-row items-start justify-start text-2xs"
-                  style={heading41Style}
+                  className="flex flex-row items-start justify-start text-2xs"
+                  style={heading4Style}
                 >
                   <div className="relative tracking-[0.3px] leading-[16px]">
                     <a
@@ -297,20 +277,21 @@ const SessionSafetyPhone = (props) => {
               </div>
             </div>
             <div
-              className="w-[286px] flex flex-row items-start justify-start gap-5"
-              style={safetyContent3Style}
+              className="self-stretch flex flex-row items-start justify-start gap-5"
+              style={safetyContent1Style}
             >
               <div className="overflow-hidden flex flex-col items-start justify-start py-1 px-px">
                 <img
                   className="w-[22px] h-4 relative"
+                  loading="lazy"
                   alt=""
-                  src="/vector-6.svg"
+                  src="/vector-8.svg"
                 />
               </div>
               <div className="flex-1 flex flex-col items-start justify-start gap-[5px]">
                 <div
-                  className="flex flex-row items-start justify-start"
-                  style={heading31Style}
+                  className="self-stretch flex flex-row items-start justify-start"
+                  style={heading3Style}
                 >
                   <div className="relative tracking-[0.2px] leading-[20px]">
                     This app may collect these data types
@@ -327,6 +308,7 @@ const SessionSafetyPhone = (props) => {
               <div className="overflow-hidden flex flex-row items-center justify-start py-px px-1">
                 <img
                   className="h-[21px] w-4 relative"
+                  loading="lazy"
                   alt=""
                   src="/vector-9.svg"
                 />
@@ -343,8 +325,9 @@ const SessionSafetyPhone = (props) => {
               <div className="overflow-hidden flex flex-row items-center justify-start py-[3px] px-1 box-border w-6 h-6">
                 <img
                   className="h-[18px] w-4 relative"
+                  loading="lazy"
                   alt=""
-                  src="/vector-81.svg"
+                  src="/vector-10.svg"
                 />
               </div>
               <div className="flex flex-col items-start justify-start">
@@ -367,4 +350,26 @@ const SessionSafetyPhone = (props) => {
   );
 };
 
-export default SessionSafetyPhone;
+SessionSafety.propTypes = {
+  className: PropTypes.string,
+
+  /** Style props */
+  propPadding: PropTypes.any,
+  propHeight: PropTypes.any,
+  propPadding1: PropTypes.any,
+  propMinHeight: PropTypes.any,
+  propWidth: PropTypes.any,
+  propAlignSelf: PropTypes.any,
+  propPadding2: PropTypes.any,
+  propPadding3: PropTypes.any,
+  propFlexWrap: PropTypes.any,
+  propWidth1: PropTypes.any,
+  propFlex: PropTypes.any,
+  propMinWidth: PropTypes.any,
+  propAlignSelf1: PropTypes.any,
+  propAlignSelf2: PropTypes.any,
+  propWidth2: PropTypes.any,
+  propAlignSelf3: PropTypes.any,
+};
+
+export default SessionSafety;

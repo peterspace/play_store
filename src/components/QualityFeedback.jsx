@@ -32,7 +32,7 @@ const QualityFeedback = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="w-[57px] rounded-9980xl border-gainsboro border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-start justify-start py-px pl-4 pr-[15px] text-sm">
+          <div className="w-[57px] rounded-9980xl border-gainsboro-200 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-start justify-start py-px pl-4 pr-[15px] text-sm">
             <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[24px]">
               Yes
             </div>
@@ -40,7 +40,7 @@ const QualityFeedback = ({ className = "" }) => {
         </div>
       </div>
       <div className="w-[53px] flex flex-col items-start justify-start pt-9 px-0 pb-0 box-border text-sm">
-        <div className="self-stretch rounded-9980xl border-gainsboro border-[1px] border-solid overflow-hidden flex flex-row items-start justify-start py-px px-4">
+        <div className="self-stretch rounded-9980xl border-gainsboro-200 border-[1px] border-solid overflow-hidden flex flex-row items-start justify-start py-px px-4">
           <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[19px]">
             No
           </div>

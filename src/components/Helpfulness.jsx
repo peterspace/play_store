@@ -39,12 +39,12 @@ const Helpfulness = ({ className = "", propGap, prop, propMinWidth }) => {
           </div>
         </div>
         <div className="w-[122px] flex flex-row items-start justify-start gap-3 text-sm">
-          <div className="flex-1 rounded-9980xl border-gainsboro border-[1px] border-solid overflow-hidden flex flex-row items-start justify-start py-px pl-4 pr-[15px]">
+          <div className="flex-1 rounded-9980xl border-gainsboro-200 border-[1px] border-solid overflow-hidden flex flex-row items-start justify-start py-px pl-4 pr-[15px]">
             <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[24px]">
               Yes
             </div>
           </div>
-          <div className="flex-1 rounded-9980xl border-gainsboro border-[1px] border-solid overflow-hidden flex flex-row items-start justify-start py-px px-4">
+          <div className="flex-1 rounded-9980xl border-gainsboro-200 border-[1px] border-solid overflow-hidden flex flex-row items-start justify-start py-px px-4">
             <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[19px]">
               No
             </div>

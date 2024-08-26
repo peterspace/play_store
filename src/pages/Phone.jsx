@@ -1,6 +1,5 @@
 import HeroGame2 from "../components/HeroGame2";
 import SessionSafety1 from "../components/SessionSafety1";
-import SessionSafetyPhone from "../components/SessionSafetyPhone";
 import ReviewsContent from "../components/ReviewsContent";
 import ReviewFeedbackOne from "../components/ReviewFeedbackOne";
 import FrameComponent2 from "../components/FrameComponent2";
@@ -9,10 +8,50 @@ import GoodGame from "../components/GoodGame";
 import FrameComponent4 from "../components/FrameComponent4";
 import SimilarGamesItem from "../components/SimilarGamesItem";
 import ChildrenGroup from "../components/ChildrenGroup";
-const redirectUrl = import.meta.env.VITE_PWA_URL;
+
 const Phone = () => {
   return (
-    <div className="w-screen relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+      <header className="shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-row items-start justify-start py-1 px-5 gap-[45px] top-[0] z-[99] sticky text-left text-3xl text-dimgray font-roboto">
+        <div className="flex flex-row items-start justify-start gap-[11px]">
+          <img
+            className="h-10 w-10 relative overflow-hidden shrink-0"
+            loading="lazy"
+            alt=""
+            src="/iconplaystore.svg"
+          />
+          <div className="flex flex-col items-start justify-start pt-2 px-0 pb-0">
+            <a className="[text-decoration:none] relative leading-[24px] font-medium text-[inherit] inline-block min-w-[119px] whitespace-nowrap">
+              Google Play
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col items-start justify-start pt-1 px-0 pb-0 text-base text-white">
+          <div className="flex flex-row items-start justify-start gap-5">
+            <div className="flex flex-col items-start justify-start pt-1 px-0 pb-0">
+              <img
+                className="w-6 h-6 relative overflow-hidden shrink-0"
+                loading="lazy"
+                alt=""
+                src="/materialsymbolssearch1.svg"
+              />
+            </div>
+            <div className="flex flex-col items-start justify-start pt-1 px-0 pb-0">
+              <img
+                className="w-6 h-6 relative overflow-hidden shrink-0"
+                loading="lazy"
+                alt=""
+                src="/codiconquestion.svg"
+              />
+            </div>
+            <div className="rounded-341xl bg-steelblue overflow-hidden flex flex-row items-start justify-start py-1.5 px-2.5">
+              <a className="[text-decoration:none] relative tracking-[0.2px] leading-[20px] text-[inherit] inline-block min-w-[12px]">
+                O
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
       <HeroGame2
         heroGameMobileBackgroundImage="url('/hero-game-mobile@3x.png')"
         vector="/vector1.svg"
@@ -20,11 +59,10 @@ const Phone = () => {
         iconStartSmall="/iconstartsmall1.svg"
         actionIconContainers="/frame-11.svg"
         vector1="/vector-17.svg"
-        redirectUrl={redirectUrl}
       />
-      <section className="w-full self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full text-left text-sm text-dimgray font-roboto">
+      <section className="self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full text-left text-sm text-dimgray font-roboto">
         <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
-          <div className="w-full overflow-x-auto flex flex-row items-start justify-start gap-10 max-w-full">
+          <div className="w-[335px] overflow-x-auto flex flex-row items-start justify-start gap-10 max-w-full">
             <img
               className="self-stretch w-[363px] relative rounded-lg max-h-full overflow-hidden shrink-0 object-cover min-h-[204px]"
               loading="lazy"
@@ -51,7 +89,7 @@ const Phone = () => {
             />
           </div>
           <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-5 max-w-full">
-            <SessionSafetyPhone
+            <SessionSafety1
               propAlignSelf="stretch"
               propFlex="unset"
               propPadding="unset"
@@ -111,13 +149,13 @@ const Phone = () => {
                     />
                   </div>
                   <div className="flex flex-row items-start justify-start">
-                    <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray text-left inline-block min-w-[41px]">
+                    <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray-100 text-left inline-block min-w-[41px]">
                       Phone
                     </div>
                   </div>
                 </div>
               </button>
-              <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center shrink-0">
+              <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center shrink-0">
                 <div className="flex flex-row items-center justify-start gap-2">
                   <div className="w-[15px] overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[1.9px] px-0 pb-[1.8px] box-border">
                     <img
@@ -133,7 +171,7 @@ const Phone = () => {
                   </div>
                 </div>
               </button>
-              <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
+              <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
                 <div className="flex flex-row items-center justify-start gap-2">
                   <div className="overflow-hidden flex flex-row items-center justify-start">
                     <img
@@ -149,7 +187,7 @@ const Phone = () => {
                   </div>
                 </div>
               </button>
-              <div className="h-[30px] w-[87px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1.5 px-[11px] shrink-0">
+              <div className="h-[30px] w-[87px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1.5 px-[11px] shrink-0">
                 <div className="w-[63px] flex-1 flex flex-row items-center justify-start gap-2">
                   <div className="w-[15px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-[0.6px] px-px box-border h-[15px]">
                     <img
@@ -166,7 +204,43 @@ const Phone = () => {
                 </div>
               </div>
             </div>
-            <ReviewsContent propMinWidth="unset" propMinWidth1="unset" />
+            <ReviewsContent
+              propMinWidth="unset"
+              propMinWidth1="unset"
+              reviewsContentWidth="327px"
+              reviewsContentFlex="unset"
+              reviewsContentHeight="unset"
+              ratingScoreAlignSelf="unset"
+              ratingScoreFlex="unset"
+              scoreValueDisplay="inline-block"
+              scoreValueMinWidth="78px"
+              scoreValueAlignSelf="unset"
+              scoreValueFlex="unset"
+              reviewsInfoAlignSelf="unset"
+              reviewsInfoHeight="unset"
+              reviewsCountAlignSelf="unset"
+              reviewsCountWidth="unset"
+              mDisplay="inline-block"
+              mMinWidth="33px"
+              mAlignSelf="unset"
+              mFlex="unset"
+              reviewsTextAlignSelf="unset"
+              reviewsTextFlex="unset"
+              reviewsDisplay="inline-block"
+              reviewsMinWidth="43px"
+              reviewsAlignSelf="unset"
+              reviewsFlex="unset"
+              emptyBarsMinWidth="8px"
+              emptyBarsWidth="unset"
+              divMinWidth="8px"
+              divWidth="unset"
+              divMinWidth1="8px"
+              divWidth1="unset"
+              divMinWidth2="8px"
+              divWidth2="unset"
+              ratingMinWidth="8px"
+              ratingWidth="unset"
+            />
             <div className="self-stretch flex flex-row items-center justify-between py-0 pl-0 pr-5 gap-5 text-gray-100">
               <div className="flex flex-row items-center justify-start py-0 pl-0 pr-[68px] gap-2.5">
                 <img
@@ -221,7 +295,7 @@ const Phone = () => {
                 7 August 2024
               </div>
             </div>
-            <div className="w-full relative tracking-[0.2px] leading-[20px] inline-block max-w-full">
+            <div className="w-[325px] relative tracking-[0.2px] leading-[20px] inline-block max-w-full">
               "I've been playing this playground game for a few months now, and
               it's been an absolute delight! The graphics are vibrant and
               engaging, the gameplay is smooth and intuitive, and there are
@@ -245,7 +319,7 @@ const Phone = () => {
             iconStartSmall3="/iconstartsmall-11.svg"
             iconStartSmall4="/iconstartsmall-11.svg"
           />
-          <div className="w-full flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-5 max-w-full">
+          <div className="w-[325px] flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-5 max-w-full">
             <div className="self-stretch relative tracking-[0.2px] leading-[20px]">
               Call Of Duty Mobile bringing familiar gameplay to mobile devices.
               The controls take some getting used to, but the game runs smoothly
@@ -277,14 +351,279 @@ const Phone = () => {
           />
         </div>
       </section>
-      <section className="self-stretch flex flex-col items-start justify-start gap-6 max-w-full text-left text-sm text-dimgray font-helvetica mb-[80px] mt-[40px]">
-        <div className="self-stretch flex flex-row items-start justify-start py-0 px-5 box-border max-w-full text-gray-100 font-roboto">
-          <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
-            <div className="self-stretch h-px relative bg-whitesmoke" />
+      <section className="self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full">
+        <div className="flex-1 bg-white flex flex-col items-start justify-start gap-5 max-w-full">
+          <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start [row-gap:20px]">
+            <SimilarGamesItem
+              propMarginLeft="unset"
+              similarImage="/similar-image-12@2x.png"
+              eASPORTSFC="CRYSIS SAGA"
+              propHeight="18px"
+              edkonGamesGmbH="Edkon Games GmbH"
+              propDisplay="unset"
+              propMinWidth="unset"
+              similarGamesItemMinWidth="109px"
+              similarFrameGap="20px"
+              similarHeadingPadding="0px 0px 0px 0px"
+              eASPORTSFCTextDecoration="unset"
+              similarSubheadingAlignSelf="stretch"
+              edkonGamesGmbHFlex="1"
+              edkonGamesGmbHMinHeight="unset"
+              similarContentMinWidth="unset"
+              similarHeadingHeight="18px"
+              similarSubheadingPadding="unset"
+            />
+            <SimilarGamesItem
+              propMarginLeft="unset"
+              similarImage="/similar-image-2@2x.png"
+              eASPORTSFC="MARIO"
+              propHeight="18px"
+              edkonGamesGmbH="Edkon Games GmbH"
+              propDisplay="unset"
+              propMinWidth="unset"
+              similarGamesItemMinWidth="109px"
+              similarFrameGap="20px"
+              similarHeadingPadding="0px 0px 0px 0px"
+              eASPORTSFCTextDecoration="none"
+              similarSubheadingAlignSelf="stretch"
+              edkonGamesGmbHFlex="1"
+              edkonGamesGmbHMinHeight="unset"
+              similarContentMinWidth="unset"
+              similarHeadingHeight="18px"
+              similarSubheadingPadding="unset"
+            />
+          </div>
+          <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start [row-gap:20px]">
+            <SimilarGamesItem
+              propMarginLeft="unset"
+              similarImage="/similar-image-32@2x.png"
+              eASPORTSFC="FREE FIRE"
+              propHeight="18px"
+              edkonGamesGmbH="Level Infinity"
+              propDisplay="inline-block"
+              propMinWidth="unset"
+              similarGamesItemMinWidth="109px"
+              similarFrameGap="20px"
+              similarHeadingPadding="0px 0px 0px 0px"
+              eASPORTSFCTextDecoration="unset"
+              similarSubheadingAlignSelf="stretch"
+              edkonGamesGmbHFlex="1"
+              edkonGamesGmbHMinHeight="32px"
+              similarContentMinWidth="unset"
+              similarHeadingHeight="18px"
+              similarSubheadingPadding="unset"
+            />
+            <SimilarGamesItem
+              propMarginLeft="unset"
+              similarImage="/similar-image-4@2x.png"
+              eASPORTSFC="GUN RAVE"
+              propHeight="18px"
+              edkonGamesGmbH="Edkon Games GmbH"
+              propDisplay="unset"
+              propMinWidth="unset"
+              similarGamesItemMinWidth="109px"
+              similarFrameGap="20px"
+              similarHeadingPadding="0px 0px 0px 0px"
+              eASPORTSFCTextDecoration="unset"
+              similarSubheadingAlignSelf="stretch"
+              edkonGamesGmbHFlex="1"
+              edkonGamesGmbHMinHeight="unset"
+              similarContentMinWidth="unset"
+              similarHeadingHeight="18px"
+              similarSubheadingPadding="unset"
+            />
+          </div>
+          <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start [row-gap:20px]">
+            <SimilarGamesItem
+              propMarginLeft="unset"
+              similarImage="/similar-image-52@2x.png"
+              eASPORTSFC="THE WITCHER"
+              propHeight="18px"
+              edkonGamesGmbH="Innersloth LLC"
+              propDisplay="unset"
+              propMinWidth="unset"
+              similarGamesItemMinWidth="109px"
+              similarFrameGap="20px"
+              similarHeadingPadding="0px 0px 0px 0px"
+              eASPORTSFCTextDecoration="unset"
+              similarSubheadingAlignSelf="stretch"
+              edkonGamesGmbHFlex="1"
+              edkonGamesGmbHMinHeight="unset"
+              similarContentMinWidth="unset"
+              similarHeadingHeight="18px"
+              similarSubheadingPadding="unset"
+            />
+            <SimilarGamesItem
+              propMarginLeft="unset"
+              similarImage="/similar-image-6@2x.png"
+              eASPORTSFC="HYPER SCAPE"
+              propHeight="18px"
+              edkonGamesGmbH="Edkon Games GmbH"
+              propDisplay="unset"
+              propMinWidth="unset"
+              similarGamesItemMinWidth="109px"
+              similarFrameGap="20px"
+              similarHeadingPadding="0px 0px 0px 0px"
+              eASPORTSFCTextDecoration="unset"
+              similarSubheadingAlignSelf="stretch"
+              edkonGamesGmbHFlex="1"
+              edkonGamesGmbHMinHeight="unset"
+              similarContentMinWidth="unset"
+              similarHeadingHeight="18px"
+              similarSubheadingPadding="unset"
+            />
           </div>
         </div>
       </section>
-      <div className="w-[335px] h-px relative bg-whitesmoke hidden max-w-full mb-[80px]" />
+      <div className="w-[335px] h-px relative bg-whitesmoke-200 hidden max-w-full" />
+      <section className="self-stretch flex flex-col items-start justify-start gap-6 max-w-full text-left text-sm text-dimgray font-roboto">
+        <div className="self-stretch flex flex-row items-start justify-start py-0 px-5 box-border max-w-full text-gray-100">
+          <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
+            <div className="flex flex-row items-start justify-start gap-5">
+              <div className="overflow-hidden flex flex-row items-center justify-start py-[2.3px] px-[3px] box-border w-[18px] h-[18px]">
+                <img
+                  className="h-[13.3px] w-[11.7px] relative"
+                  alt=""
+                  src="/vector-21.svg"
+                />
+              </div>
+              <div className="relative tracking-[0.25px] leading-[20px]">
+                Flag as inappropriate
+              </div>
+            </div>
+            <div className="self-stretch h-px relative bg-whitesmoke-200" />
+          </div>
+        </div>
+        <div className="flex flex-row items-start justify-start py-0 px-5">
+          <div className="flex flex-col items-start justify-start">
+            <div className="relative tracking-[0.25px] leading-[32px] inline-block min-w-[79px]">
+              Google Play
+            </div>
+            <div className="relative text-xs tracking-[0.2px] leading-[32px] inline-block min-w-[55px] z-[1]">
+              Play Pass
+            </div>
+            <div className="relative text-smi tracking-[0.2px] leading-[32px] inline-block min-w-[68px] z-[2]">
+              Play Points
+            </div>
+            <div className="relative tracking-[0.2px] leading-[32px] inline-block min-w-[62px] z-[3]">
+              Gift cards
+            </div>
+            <div className="relative tracking-[0.2px] leading-[32px] inline-block min-w-[55px] z-[4]">
+              Redeem
+            </div>
+            <div className="relative tracking-[0.2px] leading-[32px] inline-block min-w-[88px] z-[5]">
+              Refund policy
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row items-start justify-start py-0 px-5">
+          <ChildrenGroup />
+        </div>
+        <div className="self-stretch flex flex-col items-start justify-start gap-px max-w-full text-xs">
+          <div className="self-stretch flex flex-row items-start justify-start py-0 px-5 box-border max-w-full">
+            <div className="flex-1 flex flex-col items-start justify-start pt-0 pb-5 pl-0 pr-[23px] box-border gap-5 max-w-full">
+              <div className="self-stretch flex flex-col items-start justify-start gap-5">
+                <div className="flex flex-row items-start justify-start gap-5">
+                  <div className="relative leading-[20px] inline-block min-w-[93px]">
+                    Terms of service
+                  </div>
+                  <a className="[text-decoration:none] w-[46px] relative leading-[20px] text-[inherit] inline-block shrink-0">
+                    Privacy
+                  </a>
+                  <div className="relative leading-[20px] inline-block min-w-[104px]">
+                    About Google Play
+                  </div>
+                </div>
+                <div className="self-stretch flex flex-row items-start justify-start gap-5">
+                  <div className="relative leading-[20px] inline-block min-w-[80px]">
+                    Google Store
+                  </div>
+                  <div className="relative leading-[20px] inline-block min-w-[70px]">
+                    Developers
+                  </div>
+                  <div className="relative leading-[20px] inline-block min-w-[122px]">
+                    All prices include VAT.
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row items-start justify-start pt-0 px-0 pb-px gap-0.5">
+                <div className="relative leading-[20px] inline-block min-w-[37px]">
+                  Russia
+                </div>
+                <div className="relative leading-[20px]">
+                  (English(United Kingdom))
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer className="self-stretch bg-white flex flex-row items-center justify-between p-2.5 gap-5 z-[2] text-left text-sm text-dimgray font-roboto">
+            <div className="flex flex-col items-center justify-start">
+              <div className="flex flex-row items-start justify-start py-0 px-[11px]">
+                <img
+                  className="h-6 w-6 relative"
+                  loading="lazy"
+                  alt=""
+                  src="/group-12.svg"
+                />
+              </div>
+              <div className="flex flex-row items-start justify-start">
+                <a className="[text-decoration:none] relative tracking-[0.25px] leading-[20px] text-[inherit] inline-block min-w-[46px]">
+                  Games
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start">
+              <div className="w-[33px] flex flex-row items-start justify-start py-0 px-1 box-border">
+                <img
+                  className="h-6 w-6 relative"
+                  loading="lazy"
+                  alt=""
+                  src="/group-21.svg"
+                />
+              </div>
+              <div className="flex flex-row items-start justify-start">
+                <div className="relative tracking-[0.25px] leading-[20px] inline-block min-w-[33px]">
+                  Apps
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start">
+              <div className="w-[47px] flex flex-row items-start justify-start py-0 px-[11px] box-border">
+                <img
+                  className="h-6 w-6 relative"
+                  loading="lazy"
+                  alt=""
+                  src="/group-3.svg"
+                />
+              </div>
+              <div className="relative tracking-[0.25px] leading-[20px] inline-block min-w-[47px]">
+                Movies
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start">
+              <div className="w-[41px] flex flex-row items-start justify-start py-0 px-2 box-border">
+                <img
+                  className="h-6 w-6 relative"
+                  loading="lazy"
+                  alt=""
+                  src="/group-41.svg"
+                />
+              </div>
+              <div className="relative tracking-[0.25px] leading-[20px] inline-block min-w-[41px]">
+                Books
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start">
+              <div className="flex flex-row items-center justify-start py-0 px-[15px]">
+                <img className="h-6 w-6 relative" alt="" src="/group-51.svg" />
+              </div>
+              <div className="relative tracking-[0.25px] leading-[20px] inline-block min-w-[54px]">
+                Children
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
     </div>
   );
 };

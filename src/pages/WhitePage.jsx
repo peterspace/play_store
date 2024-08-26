@@ -1,25 +1,23 @@
-import React, { useState } from "react";
-import PhoneWhite from "./PhoneWhite";
+import React from "react";
+import MobileWhite from "./MobileWhite";
 import LaptopWhite from "./LaptopWhite";
-import TabletWhite from "./TabletWhite";
+import DesktopWhite from "./DesktopWhite";
 
 const WhitePage = () => {
   return (
     <>
-      <>
-        <div className="flex md:hidden">
-          {" "}
-          <PhoneWhite />
-        </div>
-        <div className="hidden md:flex lg:hidden">
-          {" "}
-          <TabletWhite />
-        </div>
-        <div className="hidden lg:flex">
-          {" "}
-          <LaptopWhite />
-        </div>
-      </>
+      <div className="flex tabletWhite:hidden">
+        {" "}
+        <MobileWhite />
+      </div>
+      <div className="hidden tabletWhite:flex desktopWhite:hidden">
+        {" "}
+        <LaptopWhite />
+      </div>
+      <div className="hidden tabletWhite:hidden desktopWhite:flex">
+       
+        <DesktopWhite />
+      </div>
     </>
   );
 };

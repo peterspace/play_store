@@ -1,18 +1,18 @@
 import HeaderTablet from "../components/HeaderTablet";
+import DescriptionTag from "../components/DescriptionTag";
 import FrameComponent9 from "../components/FrameComponent9";
 import ReviewFeedbackOne from "../components/ReviewFeedbackOne";
 import FrameComponent10 from "../components/FrameComponent10";
-const redirectUrl = import.meta.env.VITE_PWA_URL;
 
 const Tablet = () => {
-  async function redirectUser() {
-    window.location.replace(redirectUrl);
-  }
-
   return (
-    <div className="w-screen relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+    <div className="w-full relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+      <HeaderTablet
+        materialSymbolssearch="/materialsymbolssearch1.svg"
+        appsTextDecoration="none"
+      />
       <main className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-10 max-w-full mq450:gap-5">
-        <section className="self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/public/hero-game-tablet1@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-left text-sm text-whitesmoke font-roboto">
+        <section className="self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/public/hero-game-tablet1@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-left text-sm text-whitesmoke-200 font-roboto">
           <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[157px] px-[30px] pb-8 box-border gap-10 max-w-full mq450:gap-5">
             <div className="self-stretch flex flex-row items-start justify-center pt-0 px-0 pb-6">
               <button className="cursor-pointer [border:none] py-2 pl-[23px] pr-4 bg-gray-200 w-[110px] rounded-29xl overflow-hidden shrink-0 flex flex-row items-start justify-start box-border">
@@ -24,46 +24,15 @@ const Tablet = () => {
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
-                  <a className="[text-decoration:none] self-stretch relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-whitesmoke text-left">
+                  <a className="[text-decoration:none] self-stretch relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-whitesmoke-200 text-left">
                     Trailer
                   </a>
                 </div>
               </button>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-10 text-5xl mq600:gap-5">
-              <div className="w-full flex flex-row items-start justify-start relative gap-2">
-                <img
-                  className="h-14 w-14 relative rounded-xl overflow-hidden shrink-0 object-cover"
-                  loading="lazy"
-                  alt=""
-                  src="/similar-image1@2x.png"
-                />
-                <div className="flex-1 flex flex-col items-start justify-start gap-px">
-                  <div className="self-stretch flex flex-row flex-wrap items-start justify-start">
-                    <h2 className="m-0 flex-1 relative text-inherit leading-[32px] font-normal font-[inherit] mq450:text-lgi mq450:leading-[26px]">
-                      Call of Duty: Mobile Season 7
-                    </h2>
-                  </div>
-                  <div className="flex flex-row flex-wrap items-start justify-start text-base text-seagreen-200">
-                    <div className="relative tracking-[0.1px] leading-[24px]">
-                      Activision Publishing, Inc.
-                    </div>
-                  </div>
-                  <div className="flex flex-row flex-wrap items-start justify-start gap-x-[9px] gap-y-[7px] text-xs text-darkgray">
-                    <div className="relative tracking-[0.3px] leading-[16px] inline-block min-w-[74px]">
-                      Contains ads
-                    </div>
-                    <div className="relative text-2xs tracking-[0.3px] leading-[16px] inline-block min-w-[96px]">
-                      In-app purchases
-                    </div>
-                  </div>
-                </div>
-                {/* <img
-                  className="h-5 w-5 absolute !m-[0] top-[39px] right-[73px] overflow-hidden shrink-0 z-[1]"
-                  alt=""
-                /> */}
-              </div>
-              <div className="w-full flex flex-row items-start justify-start gap-[18px] text-sm">
+            <div className="self-stretch flex flex-col items-start justify-start gap-10 mq600:gap-5">
+              <DescriptionTag similarImage="/similar-image1@2x.png" />
+              <div className="w-[286px] flex flex-row items-start justify-start gap-[18px]">
                 <div className="flex-1 flex flex-col items-start justify-start">
                   <div className="flex flex-row items-start justify-start py-0 px-5">
                     <div className="flex flex-row items-start justify-start gap-px">
@@ -99,9 +68,9 @@ const Tablet = () => {
                 <div className="flex flex-col items-start justify-start pt-2 px-0 pb-0">
                   <div className="w-[0.5px] h-5 relative bg-darkgray" />
                 </div>
-                <div className="flex-1 flex flex-col items-center justify-start text-2xs-5 text-rose-500">
+                <div className="flex-1 flex flex-col items-center justify-start text-2xs-5 text-orange">
                   <div className="w-[55px] flex flex-row items-center justify-center py-[2.5px] px-5 box-border">
-                    <div className="flex-1 rounded-251xl border-rose-500 border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
+                    <div className="flex-1 rounded-251xl border-orange border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
                       <div className="flex flex-row items-center justify-start">
                         <div className="relative tracking-[0.19px] leading-[15px] inline-block min-w-[13px]">
                           16
@@ -114,10 +83,7 @@ const Tablet = () => {
                   </div>
                 </div>
               </div>
-              <button
-                className="cursor-pointer hover:opacity-80 [border:none] py-2 px-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center hover:bg-seagreen-400"
-                onClick={redirectUser}
-              >
+              <button className="cursor-pointer [border:none] py-2 px-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center hover:bg-seagreen-400">
                 <div className="relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-gray-100 text-left inline-block min-w-[40px]">
                   Install
                 </div>
@@ -162,7 +128,7 @@ const Tablet = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-0.5">
+              <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start py-0 pl-0 pr-0.5">
                 <div className="flex-1 flex flex-row items-start justify-start gap-5 min-w-[108px]">
                   <div className="w-5 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[2.5px] px-0 box-border">
                     <img
@@ -261,7 +227,7 @@ const Tablet = () => {
         </section>
         <FrameComponent10 />
       </main>
-      <div className="self-stretch h-px relative bg-whitesmoke" />
+      <div className="self-stretch h-px relative bg-whitesmoke-200" />
     </div>
   );
 };

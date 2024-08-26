@@ -64,13 +64,13 @@ const FrameComponent9 = ({ className = "" }) => {
                 />
               </div>
               <div className="flex flex-row items-start justify-start">
-                <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray text-left inline-block min-w-[41px]">
+                <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray-100 text-left inline-block min-w-[41px]">
                   Phone
                 </div>
               </div>
             </div>
           </button>
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center">
             <div className="flex flex-row items-center justify-start gap-2">
               <div className="w-[15px] overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[1.9px] px-0 pb-[1.8px] box-border">
                 <img
@@ -86,7 +86,7 @@ const FrameComponent9 = ({ className = "" }) => {
               </div>
             </div>
           </button>
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
             <div className="flex flex-row items-center justify-start gap-2">
               <div className="overflow-hidden flex flex-row items-center justify-start">
                 <img
@@ -102,7 +102,7 @@ const FrameComponent9 = ({ className = "" }) => {
               </div>
             </div>
           </button>
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[87px] rounded-9980xl box-border flex flex-col items-center justify-center">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[87px] rounded-9980xl box-border flex flex-col items-center justify-center">
             <div className="flex flex-row items-center justify-start gap-2">
               <div className="w-[15px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-[0.6px] px-px box-border h-[15px]">
                 <img

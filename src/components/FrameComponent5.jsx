@@ -1,54 +1,50 @@
-import HeaderTablet from "../components/HeaderTablet";
-import FrameComponent9 from "../components/FrameComponent9";
-import ReviewFeedbackOne from "../components/ReviewFeedbackOne";
-import FrameComponent10 from "../components/FrameComponent10";
-const redirectUrl = import.meta.env.VITE_PLAY_STORE_URL;
-const TabletWhite = () => {
-  async function redirectUser() {
-    window.location.replace(redirectUrl);
-  }
+import SessionSafety from "./SessionSafety";
 
+const FrameComponent5 = (prop) => {
+  const { installApp } = prop;
   return (
-    <div className="w-screen relative bg-white flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <main className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-5 box-border gap-10 max-w-full mq450:gap-5">
-        <section className="self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/public/hero-game-tablet1@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-left text-sm text-whitesmoke font-roboto">
-          <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[157px] px-[30px] pb-8 box-border gap-10 max-w-full mq450:gap-5">
+    <section
+      className={`self-stretch flex flex-row items-start justify-start pt-0 pb-5 box-border max-w-full text-left text-sm text-whitesmoke-200 font-roboto`}
+    >
+      <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
+        <div className="self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/hero-game-tablet@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
+          <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[137px] px-[30px] pb-8 box-border gap-10 max-w-full mq600:gap-5">
             <div className="self-stretch flex flex-row items-start justify-center pt-0 px-0 pb-6">
               <button className="cursor-pointer [border:none] py-2 pl-[23px] pr-4 bg-gray-200 w-[110px] rounded-29xl overflow-hidden shrink-0 flex flex-row items-start justify-start box-border">
                 <div className="overflow-hidden flex flex-row items-center justify-start py-[5px] px-[7px]">
                   <img
                     className="h-3.5 w-[11px] relative"
                     alt=""
-                    src="/vector1.svg"
+                    src="/vector.svg"
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
-                  <a className="[text-decoration:none] self-stretch relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-whitesmoke text-left">
+                  <div className="self-stretch relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-whitesmoke-200 text-left">
                     Trailer
-                  </a>
+                  </div>
                 </div>
               </button>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-10 text-5xl mq600:gap-5">
-              <div className="w-full flex flex-row items-start justify-start relative gap-2">
+            <div className="self-stretch flex flex-col items-start justify-start gap-10 text-5xl mq450:gap-5">
+              <div className="w-[282px] flex flex-row items-start justify-start relative gap-2">
                 <img
                   className="h-14 w-14 relative rounded-xl overflow-hidden shrink-0 object-cover"
                   loading="lazy"
                   alt=""
-                  src="/similar-image1@2x.png"
+                  src="/similar-image@2x.png"
                 />
                 <div className="flex-1 flex flex-col items-start justify-start gap-px">
-                  <div className="self-stretch flex flex-row flex-wrap items-start justify-start">
+                  <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start">
                     <h2 className="m-0 flex-1 relative text-inherit leading-[32px] font-normal font-[inherit] mq450:text-lgi mq450:leading-[26px]">
                       Call of Duty: Mobile Season 7
                     </h2>
                   </div>
-                  <div className="flex flex-row flex-wrap items-start justify-start text-base text-seagreen-200">
+                  <div className="flex flex-row items-start justify-start flex-wrap content-start text-base text-seagreen-200">
                     <div className="relative tracking-[0.1px] leading-[24px]">
                       Activision Publishing, Inc.
                     </div>
                   </div>
-                  <div className="flex flex-row flex-wrap items-start justify-start gap-x-[9px] gap-y-[7px] text-xs text-darkgray">
+                  <div className="flex flex-row items-start justify-start flex-wrap content-start gap-x-[9px] gap-y-[7px] text-xs text-darkgray">
                     <div className="relative tracking-[0.3px] leading-[16px] inline-block min-w-[74px]">
                       Contains ads
                     </div>
@@ -57,12 +53,8 @@ const TabletWhite = () => {
                     </div>
                   </div>
                 </div>
-                {/* <img
-                className="h-5 w-5 absolute !m-[0] top-[39px] right-[73px] overflow-hidden shrink-0 z-[1]"
-                alt=""
-              /> */}
               </div>
-              <div className="w-full flex flex-row items-start justify-start gap-[18px] text-sm">
+              <div className="w-[286px] flex flex-row items-start justify-start gap-[18px] text-sm">
                 <div className="flex-1 flex flex-col items-start justify-start">
                   <div className="flex flex-row items-start justify-start py-0 px-5">
                     <div className="flex flex-row items-start justify-start gap-px">
@@ -73,7 +65,7 @@ const TabletWhite = () => {
                         <img
                           className="w-3 h-3 relative overflow-hidden shrink-0"
                           alt=""
-                          src="/iconstartsmall1.svg"
+                          src="/iconstartsmall.svg"
                         />
                       </div>
                     </div>
@@ -98,9 +90,9 @@ const TabletWhite = () => {
                 <div className="flex flex-col items-start justify-start pt-2 px-0 pb-0">
                   <div className="w-[0.5px] h-5 relative bg-darkgray" />
                 </div>
-                <div className="flex-1 flex flex-col items-center justify-start text-2xs-5 text-rose-500">
+                <div className="flex-1 flex flex-col items-center justify-start text-2xs-5 text-orange">
                   <div className="w-[55px] flex flex-row items-center justify-center py-[2.5px] px-5 box-border">
-                    <div className="flex-1 rounded-251xl border-rose-500 border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
+                    <div className="flex-1 rounded-251xl border-orange border-[0.8px] border-solid overflow-hidden flex flex-row items-center justify-center">
                       <div className="flex flex-row items-center justify-start">
                         <div className="relative tracking-[0.19px] leading-[15px] inline-block min-w-[13px]">
                           16
@@ -115,7 +107,7 @@ const TabletWhite = () => {
               </div>
               <button
                 className="cursor-pointer hover:opacity-80 [border:none] py-2 px-5 bg-seagreen-100 self-stretch rounded-lg overflow-hidden flex flex-row items-start justify-center hover:bg-seagreen-400"
-                onClick={redirectUser}
+                onClick={installApp}
               >
                 <div className="relative text-sm tracking-[0.25px] leading-[20px] font-roboto text-gray-100 text-left inline-block min-w-[40px]">
                   Install
@@ -128,7 +120,7 @@ const TabletWhite = () => {
                   <img
                     className="h-6 w-6 relative overflow-hidden shrink-0"
                     alt=""
-                    src="/frame-11.svg"
+                    src="/frame-1.svg"
                   />
                   <div className="relative tracking-[0.15px] leading-[14px] inline-block min-w-[38px]">
                     Share
@@ -152,7 +144,7 @@ const TabletWhite = () => {
                   <img
                     className="w-5 h-[13.3px] relative"
                     alt=""
-                    src="/vector-17.svg"
+                    src="/vector-11.svg"
                   />
                 </div>
                 <div className="flex flex-row items-start justify-start">
@@ -161,8 +153,8 @@ const TabletWhite = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-0.5">
-                <div className="flex-1 flex flex-row items-start justify-start gap-5 min-w-[108px]">
+              <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start py-0 pl-0 pr-0.5">
+                <div className="flex-1 flex flex-row items-start justify-start gap-5 min-w-[92px]">
                   <div className="w-5 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[2.5px] px-0 box-border">
                     <img
                       className="w-[18.3px] h-[15px] relative"
@@ -171,12 +163,12 @@ const TabletWhite = () => {
                     />
                   </div>
                   <div className="flex-1 flex flex-row items-start justify-start">
-                    <div className="relative tracking-[0.2px] leading-[20px]">
+                    <div className="flex-1 relative tracking-[0.2px] leading-[20px]">
                       You can share this with your family.
                     </div>
                   </div>
                 </div>
-                <div className="flex-1 flex flex-row items-start justify-start min-w-[108px] ml-[-2px]">
+                <div className="flex-1 flex flex-row items-start justify-start min-w-[92px] ml-[-2px]">
                   <div className="flex-1 relative tracking-[0.2px] leading-[20px]">
                     Learn more about Family Library
                   </div>
@@ -184,85 +176,10 @@ const TabletWhite = () => {
               </div>
             </div>
           </div>
-        </section>
-        <FrameComponent9 />
-        <section className="self-stretch flex flex-row items-start justify-start py-0 px-10 box-border max-w-full text-left text-sm text-dimgray font-roboto">
-          <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
-            <div className="self-stretch flex flex-row items-center justify-between py-0 pl-0 pr-5 gap-5 text-gray-100">
-              <div className="flex flex-row items-center justify-start py-0 pl-0 pr-[49px] gap-[9px]">
-                <img
-                  className="h-8 w-8 rounded-341xl overflow-hidden shrink-0 object-cover"
-                  alt=""
-                  src="/frame-12-12@2x.png"
-                />
-                <div className="flex flex-row items-center justify-center">
-                  <div className="relative tracking-[0.2px] leading-[20px] inline-block min-w-[103px]">
-                    Mir Nowman Ali
-                  </div>
-                </div>
-              </div>
-              <div className="overflow-hidden flex flex-row items-center justify-start py-1 px-2.5 box-border w-6 h-6">
-                <img
-                  className="h-4 w-1 relative"
-                  alt=""
-                  src="/vector-141.svg"
-                />
-              </div>
-            </div>
-            <div className="flex flex-row items-start justify-start text-2xs">
-              <img
-                className="h-3 w-3 relative overflow-hidden shrink-0"
-                alt=""
-                src="/iconstartsmall-11.svg"
-              />
-              <img
-                className="h-3 w-3 relative overflow-hidden shrink-0 z-[1]"
-                alt=""
-                src="/iconstartsmall-11.svg"
-              />
-              <img
-                className="h-3 w-3 relative overflow-hidden shrink-0 z-[2]"
-                alt=""
-                src="/iconstartsmall-11.svg"
-              />
-              <img
-                className="h-3 w-3 relative overflow-hidden shrink-0 z-[3]"
-                alt=""
-                src="/iconstartsmall-11.svg"
-              />
-              <div className="flex flex-col items-start justify-start py-0 pl-0 pr-1.5">
-                <img
-                  className="w-3 h-3 relative overflow-hidden shrink-0 z-[4]"
-                  alt=""
-                  src="/iconstartsmall-11.svg"
-                />
-              </div>
-              <div className="relative tracking-[0.3px] leading-[16px] inline-block min-w-[82px]">
-                14 August 2024
-              </div>
-            </div>
-            <div className="self-stretch relative tracking-[0.2px] leading-[20px]">
-              Call Of Duty Mobile bringing familiar gameplay to mobile devices.
-              The controls take some getting used to, but the game runs smoothly
-              and the graphics are impressive. The multiplayer mode is
-              fast-paced and fun, with a good selection of maps and modes.
-              However, the game can feel a bit repetitive and the
-              microtransactions can be aggressive. Overall, it's a good option
-              for fans of first-person shooters and CoD enthusiasts, but may not
-              offer anything new for a more innovative experience.
-            </div>
-            <ReviewFeedbackOne
-              propGap="15px"
-              reviewFeedback="547"
-              propMinWidth="22px"
-            />
-          </div>
-        </section>
-        <FrameComponent10 />
-      </main>
-      <div className="self-stretch h-px relative bg-whitesmoke" />
-    </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default TabletWhite;
+export default FrameComponent5;

@@ -41,7 +41,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
           </div>
           <div className="flex flex-col items-start justify-start gap-2.5 text-sm">
             <div className="flex flex-row items-center justify-start py-0 pl-0 pr-5 gap-2.5">
-              <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[78px] rounded-9980xl box-border flex flex-col items-center justify-center">
+              <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[78px] rounded-9980xl box-border flex flex-col items-center justify-center">
                 <div className="flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-dimgray text-left inline-block min-w-[54px]">
@@ -50,7 +50,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                   </div>
                 </div>
               </button>
-              <div className="w-[65px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+              <div className="w-[65px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
                 <div className="flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[41px]">
@@ -59,7 +59,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
+              <div className="rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
                 <div className="flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[83px]">
@@ -70,7 +70,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
               </div>
             </div>
             <div className="w-[260px] flex flex-row items-center justify-start gap-2.5">
-              <div className="flex-1 rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
+              <div className="flex-1 rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
                 <div className="flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[76px]">
@@ -79,7 +79,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                   </div>
                 </div>
               </div>
-              <div className="w-[75px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
+              <div className="w-[75px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-[11px]">
                 <div className="flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[51px]">
@@ -88,7 +88,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                   </div>
                 </div>
               </div>
-              <div className="w-[65px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-2.5">
+              <div className="w-[65px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1 px-2.5">
                 <div className="w-[43px] flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[42px]">
@@ -99,7 +99,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
               </div>
             </div>
             <div className="w-[74px] flex flex-row items-center justify-start">
-              <div className="flex-1 rounded-9980xl bg-white border-gainsboro border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
+              <div className="flex-1 rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid flex flex-col items-center justify-center py-1 px-[11px]">
                 <div className="flex flex-row items-center justify-start">
                   <div className="flex flex-row items-start justify-start">
                     <div className="relative tracking-[0.25px] leading-[18px] inline-block min-w-[50px]">
@@ -134,7 +134,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                 information and may update it over time.
               </div>
             </div>
-            <div className="self-stretch rounded-lg border-gainsboro border-[1px] border-solid flex flex-col items-start justify-start py-[18px] px-[19px] gap-5 text-sm">
+            <div className="self-stretch rounded-lg border-gainsboro-200 border-[1px] border-solid flex flex-col items-start justify-start py-[18px] px-[19px] gap-5 text-sm">
               <div className="self-stretch flex flex-col items-start justify-start gap-5">
                 <div className="self-stretch flex flex-row items-start justify-start py-0 px-0 gap-5">
                   <div className="overflow-hidden flex flex-row items-center justify-start p-0.5">
@@ -267,13 +267,13 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                 />
               </div>
               <div className="flex flex-row items-start justify-start">
-                <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray text-left inline-block min-w-[41px]">
+                <div className="relative text-sm tracking-[0.25px] leading-[18px] font-roboto text-darkslategray-100 text-left inline-block min-w-[41px]">
                   Phone
                 </div>
               </div>
             </div>
           </button>
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center shrink-0">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white w-[65px] rounded-9980xl box-border flex flex-col items-center justify-center shrink-0">
             <div className="flex flex-row items-center justify-start gap-2">
               <div className="w-[15px] overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[1.9px] px-0 pb-[1.8px] box-border">
                 <img
@@ -289,7 +289,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
               </div>
             </div>
           </button>
-          <button className="cursor-pointer border-gainsboro border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
+          <button className="cursor-pointer border-gainsboro-200 border-[1px] border-solid py-1 px-[11px] bg-white rounded-9980xl flex flex-col items-center justify-center">
             <div className="flex flex-row items-center justify-start gap-2">
               <div className="overflow-hidden flex flex-row items-center justify-start">
                 <img
@@ -305,7 +305,7 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
               </div>
             </div>
           </button>
-          <div className="self-stretch w-[87px] rounded-9980xl bg-white border-gainsboro border-[1px] border-solid box-border flex flex-col items-center justify-center py-1.5 px-[11px] shrink-0">
+          <div className="self-stretch w-[87px] rounded-9980xl bg-white border-gainsboro-200 border-[1px] border-solid box-border flex flex-col items-center justify-center py-1.5 px-[11px] shrink-0">
             <div className="w-[63px] flex-1 flex flex-row items-center justify-start gap-2">
               <div className="w-[15px] overflow-hidden shrink-0 flex flex-row items-center justify-start py-[0.6px] px-px box-border h-[15px]">
                 <img
@@ -356,8 +356,8 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                     5
                   </div>
                   <div className="flex-1 flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke">
-                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke w-full h-full hidden" />
+                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke-200">
+                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke-200 w-full h-full hidden" />
                       <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-seagreen-300 w-[129px] h-2.5 z-[1]" />
                     </div>
                   </div>
@@ -367,8 +367,8 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                     4
                   </div>
                   <div className="flex-1 flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke">
-                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke w-full h-full hidden" />
+                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke-200">
+                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke-200 w-full h-full hidden" />
                       <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-seagreen-300 w-[17px] h-2.5 z-[1]" />
                     </div>
                   </div>
@@ -380,8 +380,8 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                     3
                   </div>
                   <div className="flex-1 flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke">
-                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke w-full h-full hidden" />
+                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke-200">
+                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke-200 w-full h-full hidden" />
                       <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-seagreen-300 w-[11px] h-2.5 z-[1]" />
                     </div>
                   </div>
@@ -391,8 +391,8 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                     2
                   </div>
                   <div className="flex-1 flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke">
-                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke w-full h-full hidden" />
+                    <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke-200">
+                      <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke-200 w-full h-full hidden" />
                       <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-seagreen-300 w-[7px] h-2.5 z-[1]" />
                     </div>
                   </div>
@@ -403,8 +403,8 @@ const FrameComponent = ({ className = "", propGap, prop, propMinWidth }) => {
                   1
                 </div>
                 <div className="flex-1 flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-                  <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke">
-                    <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke w-full h-full hidden" />
+                  <div className="self-stretch h-2.5 relative rounded-9980xl bg-whitesmoke-200">
+                    <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-whitesmoke-200 w-full h-full hidden" />
                     <div className="absolute top-[0px] left-[0px] rounded-9980xl bg-seagreen-300 w-[34px] h-2.5 z-[1]" />
                   </div>
                 </div>
