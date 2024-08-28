@@ -75,7 +75,7 @@ const HeroGame = ({
                     <div className="self-stretch flex flex-row items-start justify-start py-0 pl-[11px] pr-0">
                       <div className="h-16 flex-1 relative">
                         <h2 className="m-0 absolute top-[0px] left-[0px] text-inherit leading-[32px] font-normal font-[inherit] inline-block w-full h-full">
-                          Call of Duty: Mobile Season 7
+                          Plisnters
                         </h2>
                         <img
                           className="absolute top-[39px] left-[103px] w-5 h-5 overflow-hidden z-[1]"

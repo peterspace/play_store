@@ -612,7 +612,7 @@ const PhonePopInstallMiddle = () => {
         </section>
         <ReviewContent1 />
         <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-5 pl-5 pr-[30px] box-border max-w-full shrink-0 text-left text-sm text-dimgray font-roboto">
-          <div className="h-[180px] flex-1 relative tracking-[0.2px] leading-[20px] inline-block shrink-0 max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
+          <div className="h-[180px] flex-1 relative tracking-[0.2px] leading-[20px] inline-block shrink-0 max-w-full">{`Score first in Plinsters: Eternal battle! Neyo returns as a Myth - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the first Season Premium Battle Pass now!`}</div>
         </section>
         <footer className="self-stretch h-11 shrink-0 flex flex-row items-start justify-start pt-0 pb-5 pl-5 pr-[29px] box-border max-w-full text-left text-lg text-gray-100 font-roboto">
           <div className="self-stretch flex-1 flex flex-row items-start justify-start relative shrink-0 max-w-full">

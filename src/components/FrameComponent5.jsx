@@ -8,7 +8,10 @@ const FrameComponent5 = (prop) => {
     >
       <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
         <div className="self-stretch overflow-hidden flex flex-row items-start justify-start bg-[url('/hero-game-tablet@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
-          <div className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[137px] px-[30px] pb-8 box-border gap-10 max-w-full mq600:gap-5">
+          <div
+            // className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_40.56%)] overflow-hidden flex flex-col items-start justify-start pt-[137px] px-[30px] pb-8 box-border gap-10 max-w-full mq600:gap-5"
+            className="flex-1 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0.08)_31.77%,_#202124_60.56%)] overflow-hidden flex flex-col items-start justify-start pt-[137px] px-[30px] pb-8 box-border gap-10 max-w-full mq600:gap-5"
+          >
             <div className="self-stretch flex flex-row items-start justify-center pt-0 px-0 pb-6">
               <button className="cursor-pointer [border:none] py-2 pl-[23px] pr-4 bg-gray-200 w-[110px] rounded-29xl overflow-hidden shrink-0 flex flex-row items-start justify-start box-border">
                 <div className="overflow-hidden flex flex-row items-center justify-start py-[5px] px-[7px]">
@@ -36,7 +39,7 @@ const FrameComponent5 = (prop) => {
                 <div className="flex-1 flex flex-col items-start justify-start gap-px">
                   <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start">
                     <h2 className="m-0 flex-1 relative text-inherit leading-[32px] font-normal font-[inherit] mq450:text-lgi mq450:leading-[26px]">
-                      Call of Duty: Mobile Season 7
+                      Plisnters
                     </h2>
                   </div>
                   <div className="flex flex-row items-start justify-start flex-wrap content-start text-base text-seagreen-200">

@@ -48,7 +48,7 @@ const HeroGame2 = ({
               <div className="flex-1 flex flex-col items-start justify-start gap-px">
                 <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start">
                   <h2 className="m-0 flex-1 relative text-inherit leading-[32px] font-normal font-[inherit]">
-                    Call of Duty: Mobile Season 7
+                    Plisnters
                   </h2>
                 </div>
                 <div className="flex flex-row items-start justify-start flex-wrap content-start text-base text-seagreen-200">

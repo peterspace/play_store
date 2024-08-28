@@ -7,7 +7,7 @@ const GameInfo = ({ className = "" }) => {
       className={`self-stretch flex flex-row items-start justify-start pt-0 px-6 pb-[34px] box-border max-w-full text-left text-sm text-gray-100 font-roboto ${className}`}
     >
       <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
-        <div className="self-stretch relative tracking-[0.2px] leading-[20px] text-dimgray">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
+        <div className="self-stretch relative tracking-[0.2px] leading-[20px] text-dimgray">{`Score first in Plinsters: Eternal battle! Neyo returns as a Myth - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the first Season Premium Battle Pass now!`}</div>
         <div className="self-stretch flex flex-row items-start justify-start relative text-lg">
           <div className="relative leading-[24px] inline-block min-w-[99px]">
             App support

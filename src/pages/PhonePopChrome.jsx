@@ -12,26 +12,19 @@ const redirectUrl = import.meta.env.VITE_PWA_URL;
 const PhonePopChrome = () => {
   const [isAppSupport, setIsAppSupport] = useState(false);
   const [isInstall, setIsInstall] = useState(false);
-  const [isInstalling, setIsInstalling] = useState(false);
-
-  const [isAddToScreen, setIsAddToScreen] = useState(false);
   const [isHome, setIsHome] = useState(false);
   const [isPopUp, setIsPopUp] = useState(false);
 
   async function installApp() {
     setIsPopUp(true);
     setIsInstall(true);
-    setIsAddToScreen(false);
     setIsHome(false);
-    setIsInstalling(false);
   }
 
   async function addToScreen() {
     setIsPopUp(true);
     setIsInstall(false);
-    setIsAddToScreen(true);
     setIsHome(false);
-    setIsInstalling(false);
     window.location.replace(redirectUrl);
     //redirect to pwa app here
   }
@@ -39,17 +32,14 @@ const PhonePopChrome = () => {
   async function installingApp() {
     setIsPopUp(true);
     setIsInstall(false);
-    setIsAddToScreen(false);
     setIsHome(false);
-    setIsInstalling(true);
+    window.location.replace(redirectUrl);
   }
 
   async function cancelInstall() {
     setIsPopUp(false);
     setIsInstall(false);
-    setIsAddToScreen(false);
     setIsHome(true);
-    setIsInstalling(false);
   }
 
   return (
@@ -94,7 +84,7 @@ const PhonePopChrome = () => {
                   <div className="flex-1 flex flex-col items-start justify-start gap-px">
                     <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start">
                       <a className="[text-decoration:none] flex-1 relative leading-[32px] text-[inherit]">
-                        Call of Duty: Mobile Season 7
+                        Plisnters
                       </a>
                     </div>
                     <div className="flex flex-row items-start justify-start flex-wrap content-start text-base text-seagreen-200">
@@ -672,7 +662,7 @@ const PhonePopChrome = () => {
           <div
             // className="h-[180px] flex-1 relative tracking-[0.2px] leading-[20px] inline-block shrink-0 max-w-full"
             className="h-fit flex-1 relative tracking-[0.2px] leading-[20px] inline-block shrink-0 max-w-full"
-          >{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
+          >{`Score first in Plinsters: Eternal battle! Neyo returns as a Myth - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the first Season Premium Battle Pass now!`}</div>
         </section>
         <footer className="self-stretch h-11 shrink-0 flex flex-row items-start justify-start pt-0 pb-5 pl-5 pr-[29px] box-border max-w-full text-left text-lg text-gray-100 font-roboto">
           <div className="self-stretch flex-1 flex flex-row items-start justify-start relative shrink-0 max-w-full">
@@ -728,14 +718,6 @@ const PhonePopChrome = () => {
           <div className="self-stretch flex-1 relative bg-whitesmoke-200 shrink-0 max-w-full z-[1]" />
         </div>
         {/* Popover session */}
-        {isInstalling && (
-          <section className="w-full !m-[0] absolute h-full top-[0px] right-[0px] bottom-[0px] left-[0px] bg-gray-200 overflow-hidden shrink-0 flex flex-col items-center justify-end pt-[510px] px-[7px] pb-2.5 box-border max-w-full z-[5]">
-            <PopUpInstall1
-              cancelInstall={cancelInstall}
-              addToScreen={addToScreen}
-            />
-          </section>
-        )}
         {isInstall && (
           <section className="w-full !m-[0] absolute h-full top-[0px] right-[0px] bottom-[0px] left-[0px] bg-gray-200 overflow-hidden shrink-0 flex flex-col items-center justify-end py-48 px-[7px] box-border min-h-[800px] z-[5]">
             <PopUpInstall

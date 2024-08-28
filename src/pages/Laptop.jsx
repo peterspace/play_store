@@ -31,7 +31,7 @@ const Laptop = () => {
               <div className="flex-1 flex flex-col items-start justify-start gap-px">
                 <div className="self-stretch flex flex-row flex-wrap items-start justify-start">
                   <h2 className="m-0 flex-1 relative text-inherit leading-[32px] font-normal font-[inherit] mq450:text-lgi mq450:leading-[26px]">
-                    Call of Duty: Mobile Season 7
+                    Plisnters
                   </h2>
                 </div>
                 <div className="flex flex-row flex-wrap items-start justify-start text-base text-seagreen-200">
@@ -540,7 +540,7 @@ const Laptop = () => {
               modes, but to one his own preference. Overall good!
             </div>
             <HelpfulReviewThree />
-            <div className="w-full relative tracking-[0.2px] leading-[20px] inline-block max-w-full">{`Score first in Call of Duty®: Mobile’s Season 7: Eternal Ghost! Ghost returns as a Mythic Ghost - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the Season 7 Premium Battle Pass now!`}</div>
+            <div className="w-full relative tracking-[0.2px] leading-[20px] inline-block max-w-full">{`Score first in Plinsters: Eternal battle! Neyo returns as a Myth - Eternal Siege in the War's Paragon Draw! Jump into the new Ground War map, Collateral, for wide-open desert landscapes. Score and defend football-style goals in the new MP mode, Uplink! Be the gamebreaker with the Epic Surf Warrior - Quarterback & his Epic ISO - Cornerback in the first Season Premium Battle Pass now!`}</div>
             <SupportAndPolicy
               isAppSupport={isAppSupport}
               setIsAppSupport={setIsAppSupport}
