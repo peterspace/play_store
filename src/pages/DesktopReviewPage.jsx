@@ -16,14 +16,8 @@ const DesktopReviewPage = () => {
   }
 
   return (
-    <div className="w-full relative bg-white flex flex-col items-start justify-start pt-0 px-0 pb-[60px] box-border leading-[normal] tracking-[normal] text-left text-lg text-gray-100 font-roboto">
-      <HeaderDesktop1
-        frameDivTextDecoration="none"
-        frameDivMargin="unset"
-        headerItemsTextDecoration="none"
-        headerItemsMargin="unset"
-        propTextDecoration="none"
-      />
+    <div className="w-screen h-screen relative bg-white flex flex-col items-start justify-start pt-0 px-0 pb-[60px] box-border leading-[normal] tracking-[normal] text-left text-lg text-gray-100 font-roboto">
+      <HeaderDesktop1 />
       <FrameComponent15
         featureHeight="701px"
         adventureBackgroundImage="url('/hero-game-laptop1@3x.png')"
@@ -385,7 +379,10 @@ const DesktopReviewPage = () => {
             </div>
           </section>
 
-          <div className="cursor-pointer hover:opacity-80 flex flex-row items-start justify-start py-0 px-[22px] text-sm text-seagreen-300" onClick={redirectUserPlayStore}>
+          <div
+            className="cursor-pointer hover:opacity-80 flex flex-row items-start justify-start py-0 px-[22px] text-sm text-seagreen-300"
+            onClick={redirectUserPlayStore}
+          >
             <div className="relative tracking-[0.15px] leading-[20px]">
               See all reviews on google play
             </div>
@@ -639,7 +636,10 @@ const DesktopReviewPage = () => {
             </div>
           </section>
 
-          <div className="cursor-pointer hover:opacity-80 flex flex-row items-start justify-start py-0 px-[22px] text-sm text-seagreen-300" onClick={redirectUserAppStore}>
+          <div
+            className="cursor-pointer hover:opacity-80 flex flex-row items-start justify-start py-0 px-[22px] text-sm text-seagreen-300"
+            onClick={redirectUserAppStore}
+          >
             <div className="relative tracking-[0.15px] leading-[20px]">
               See all reviews on apple store
             </div>

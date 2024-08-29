@@ -3,12 +3,18 @@ import FrameComponent15 from "../components/FrameComponent15";
 import FrameComponent20 from "../components/FrameComponent20";
 import FrameComponent19 from "../components/FrameComponent19";
 import FrameComponent21 from "../components/FrameComponent21";
-import FrameComponentTablet from "../components/FrameComponentTablet ";
+
 
 const TabletReviewPage = () => {
   return (
-    <div className="w-screen h-screen relative bg-white flex flex-col items-start justify-start pb-[60px] leading-[normal] tracking-[normal]">
-      <HeaderDesktop1 />
+    <div className="w-full relative bg-white flex flex-col items-start justify-start pt-0 px-0 pb-[60px] box-border leading-[normal] tracking-[normal]">
+      <HeaderDesktop1
+        frameDivTextDecoration="none"
+        frameDivMargin="unset"
+        headerItemsTextDecoration="none"
+        headerItemsMargin="unset"
+        propTextDecoration="none"
+      />
       <FrameComponent15
         featureHeight="701px"
         adventureBackgroundImage="url('/hero-game-laptop@3x.png')"
@@ -29,8 +35,9 @@ const TabletReviewPage = () => {
         propMinWidth11="74px"
         propMinWidth12="43px"
         propMinWidth13="75px"
+        
       />
-      <FrameComponentTablet />
+      <FrameComponent20 />
       <section className="self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-10 box-border max-w-full">
         <FrameComponent19 />
       </section>

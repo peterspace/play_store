@@ -1,12 +1,13 @@
 import CaroselReviewContainer from "./CaroselReviewContainer";
+import CaroselReviewContainerTablet from "./CaroselReviewContainerTablet";
 import PropTypes from "prop-types";
 
 //className="self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-10 box-border max-w-full"
 
-const FrameComponent20 = ({ className = "" }) => {
+const FrameComponentTablet = () => {
   return (
     <section
-      className={`self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full text-left text-5xl text-gray-100 font-roboto ${className}`}
+      className={`self-stretch flex flex-row items-start justify-start pt-0 px-5 pb-5 box-border max-w-full text-left text-5xl text-gray-100 font-roboto`}
     >
       <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
         <div className="self-stretch flex flex-col items-start justify-start">
@@ -18,7 +19,7 @@ const FrameComponent20 = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <CaroselReviewContainer
+        <CaroselReviewContainerTablet
           propWidth="1360px"
           propHeight="336px"
           propFlex="unset"
@@ -48,8 +49,4 @@ const FrameComponent20 = ({ className = "" }) => {
   );
 };
 
-FrameComponent20.propTypes = {
-  className: PropTypes.string,
-};
-
-export default FrameComponent20;
+export default FrameComponentTablet;
