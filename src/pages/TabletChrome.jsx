@@ -580,7 +580,7 @@ const TabletChrome = () => {
         </div>
         {/* Popover session */}
         {isInstall && (
-          <section className="w-full !m-[0] absolute h-full top-[0px] right-[0px] bottom-[0px] left-[0px] bg-gray-200 overflow-hidden shrink-0 flex flex-col items-center justify-end py-48 px-[7px] box-border min-h-[800px] z-[5]">
+          <section className="w-full !m-[0] absolute h-full top-[0px] right-[0px] bottom-[0px] left-[0px] bg-gray-200 overflow-hidden shrink-0 flex flex-col items-center justify-center px-[7px] box-border min-h-[800px] z-[5]">
             <PopUpInstall
               installingApp={installingApp}
               cancelInstall={cancelInstall}

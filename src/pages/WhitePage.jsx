@@ -1,22 +1,16 @@
 import React from "react";
-import MobileWhite from "./MobileWhite";
-import LaptopWhite from "./LaptopWhite";
-import DesktopWhite from "./DesktopWhite";
+import TabletReviewPage from "./TabletReviewPage";
+import DesktopReviewPage from "./DesktopReviewPage";
 
 const WhitePage = () => {
   return (
     <>
-      <div className="flex tabletWhite:hidden">
+      <div className="flex desktopBlack:hidden">
         {" "}
-        <MobileWhite />
+        <TabletReviewPage />
       </div>
-      <div className="hidden tabletWhite:flex desktopWhite:hidden">
-        {" "}
-        <LaptopWhite />
-      </div>
-      <div className="hidden tabletWhite:hidden desktopWhite:flex">
-       
-        <DesktopWhite />
+      <div className="hidden desktopBlack:flex">
+        <DesktopReviewPage />
       </div>
     </>
   );

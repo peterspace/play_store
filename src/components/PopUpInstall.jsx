@@ -17,8 +17,7 @@ const PopUpInstall = (props) => {
 
   return (
     <div
-      className={`flex-1 rounded-lg bg-gainsboro-300 flex flex-col items-center justify-center p-5 box-border gap-5 max-w-full text-left text-xl text-black font-roboto ${className}`}
-      style={popUpInstallStyle}
+      className={`w-[321px] rounded-lg bg-gainsboro-300 flex flex-col items-center justify-center p-5 box-border gap-5 max-w-full text-left text-xl text-black font-roboto ${className}`}
     >
       <div className="w-[321px] flex flex-col items-center justify-center gap-5 max-w-full">
         <div className="self-stretch flex flex-col items-start justify-start gap-5">
