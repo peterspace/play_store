@@ -1,4 +1,7 @@
 import React from "react";
+// className={`self-stretch flex-1 h-[600px] tabletBlack:h-[661px] desktopBlack:h-[900px] overflow-hidden flex flex-col items-center justify-start bg-cover bg-no-repeat bg-[top] max-w-full bg-[url('/hero-game-laptop2@3x.png')] mobileBlack:bg-[url('/landing2.png')] tabletBlack:bg-[url('/landing2.png')] desktopBlack:bg-[url('/desktop-hero_bg.png')]`}
+//desktop-hero.png
+//desktop-hero_1.png
 
 const redirectUrlPlayStore = import.meta.env.VITE_PLAY_STORE_URL;
 const redirectUrlAppStore = import.meta.env.VITE_APP_STORE_URL;
@@ -14,8 +17,8 @@ const DesktopHero = () => {
   return (
     <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-10 box-border max-w-full text-left text-5xl text-gray-100 font-roboto">
       <div className="flex-1 flex flex-col items-start justify-start max-w-full">
-        <div className="self-stretch w-full h-[832px] relative bg-black bg-cover bg-no-repeat bg-[top] max-w-full bg-[url('/desktop-hero_bg.png')]">
-          <div className="h-[147px] py-0.5 left-[23px] top-[608px] absolute flex-col justify-start items-center gap-10 inline-flex">
+        <div className="self-stretch w-full h-[1024px] relative bg-black bg-cover bg-no-repeat bg-[top] max-w-full bg-[url('/desktop-hero_bg.png')]">
+          <div className="h-[147px] py-0.5 left-[23px] top-[800px] absolute flex-col justify-start items-center gap-10 inline-flex">
             <div className="self-stretch h-[143px] flex-col justify-start items-start gap-10 flex">
               <div className="flex-col justify-start items-start gap-5 flex">
                 <img
@@ -50,7 +53,7 @@ const DesktopHero = () => {
             <div className="w-5 h-5 relative" />
           </div>
           <div className="w-full flex flex-row justify-center items-center">
-            <div className="w-[936px] h-[705px] top-[50px] absolute">
+            <div className="w-[936px] h-[705px] top-[160px] absolute">
               <div className="p-1 left-[390px] top-[673px] absolute bg-white/20 rounded justify-start items-start gap-[3.73px] inline-flex">
                 <img
                   className="cursor-pointer hover:opacity-80 w-[93.33px] h-7 relative rounded-[2.99px]"
@@ -68,7 +71,12 @@ const DesktopHero = () => {
             </div>
           </div>
           <div className="w-full flex flex-row justify-center items-center ">
-            <div className="w-[721px] top-[100px] absolute rounded-[10.64px] border-8 border-[#7f7f8f]/20] flex-col justify-start items-start gap-[5.91px] inline-flex shadow-2xl bg-gradient-to-r from-gray-500 to-neutral-300 p-[2px]">
+            <div
+              // className="w-[721px] h-[590.98px] top-[217px] absolute bg-[#202124] rounded-[10.64px] border-8 border-[#7f7f8f]/20] flex-col justify-start items-start gap-[5.91px] inline-flex"
+              //   className="w-[721px] h-[590.98px] top-[217px] absolute bg-[#202124] rounded-[10.64px] border-8 border-[#7f7f8f]/20] flex-col justify-start items-start gap-[5.91px] inline-flex shadow-2xl"
+              //   className="w-[721px] h-[590.98px] top-[217px] absolute rounded-[10.64px] border-8 border-[#7f7f8f]/20] flex-col justify-start items-start gap-[5.91px] inline-flex shadow-2xl bg-gradient-to-r from-gray-500 to-neutral-300 p-[1px]"
+              className="w-[721px] top-[217px] absolute rounded-[10.64px] border-8 border-[#7f7f8f]/20] flex-col justify-start items-start gap-[5.91px] inline-flex shadow-2xl bg-gradient-to-r from-gray-500 to-neutral-300 p-[2px]"
+            >
               <img
                 className="self-stretch grow shrink basis-0"
                 src="/desktop-hero_1.png"
