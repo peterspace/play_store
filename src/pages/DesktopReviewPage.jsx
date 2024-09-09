@@ -3,6 +3,7 @@ import FrameComponent15 from "../components/FrameComponent15";
 import CaroselReviewContainer from "../components/CaroselReviewContainer";
 import StoreContainer from "../components/StoreContainer";
 import ReviewCard from "../components/ReviewCard";
+import DesktopHero from "../components/DesktopHero";
 const redirectUrlPlayStore = import.meta.env.VITE_PLAY_STORE_URL;
 const redirectUrlAppStore = import.meta.env.VITE_APP_STORE_URL;
 
@@ -18,7 +19,8 @@ const DesktopReviewPage = () => {
   return (
     <div className="w-screen h-screen relative bg-white flex flex-col items-start justify-start pt-0 px-0 pb-[60px] box-border leading-[normal] tracking-[normal] text-left text-lg text-gray-100 font-roboto">
       <HeaderDesktop1 />
-      <FrameComponent15
+      <DesktopHero />
+      {/* <FrameComponent15
         featureHeight="701px"
         adventureBackgroundImage="url('/hero-game-laptop1@3x.png')"
         adventureAlignSelf="stretch"
@@ -38,7 +40,7 @@ const DesktopReviewPage = () => {
         propMinWidth11="74px"
         propMinWidth12="43px"
         propMinWidth13="75px"
-      />
+      /> */}
 
       <section className="self-stretch flex flex-row items-start justify-start pt-0 pl-10 pr-20 pb-10 box-border max-w-full text-left text-5xl text-gray-100 font-roboto">
         <div className="flex-1 flex flex-col items-start justify-start gap-5 max-w-full">
@@ -179,6 +181,7 @@ const DesktopReviewPage = () => {
                   propFlex5="unset"
                   propDisplay3="inline-block"
                   propMinWidth3="33px"
+                  onClick={redirectUserPlayStore}
                 />
                 <ReviewCard
                   propWidth="unset"
@@ -218,6 +221,7 @@ const DesktopReviewPage = () => {
                   propFlex5="unset"
                   propDisplay3="inline-block"
                   propMinWidth3="33px"
+                  onClick={redirectUserPlayStore}
                 />
                 <ReviewCard
                   propWidth="unset"
@@ -257,6 +261,7 @@ const DesktopReviewPage = () => {
                   propFlex5="unset"
                   propDisplay3="inline-block"
                   propMinWidth3="33px"
+                  onClick={redirectUserPlayStore}
                 />
                 <ReviewCard
                   propWidth="unset"
@@ -296,6 +301,7 @@ const DesktopReviewPage = () => {
                   propFlex5="unset"
                   propDisplay3="inline-block"
                   propMinWidth3="33px"
+                  onClick={redirectUserPlayStore}
                 />
                 <ReviewCard
                   propWidth="unset"
@@ -335,6 +341,7 @@ const DesktopReviewPage = () => {
                   propFlex5="unset"
                   propDisplay3="inline-block"
                   propMinWidth3="33px"
+                  onClick={redirectUserPlayStore}
                 />
                 <ReviewCard
                   propWidth="unset"
@@ -374,6 +381,7 @@ const DesktopReviewPage = () => {
                   propFlex5="unset"
                   propDisplay3="inline-block"
                   propMinWidth3="33px"
+                  onClick={redirectUserPlayStore}
                 />
               </>
             </div>
@@ -437,6 +445,7 @@ const DesktopReviewPage = () => {
                 propFlex5="unset"
                 propDisplay3="inline-block"
                 propMinWidth3="33px"
+                onClick={redirectUserAppStore}
               />
               <ReviewCard
                 propWidth="unset"
@@ -476,6 +485,7 @@ const DesktopReviewPage = () => {
                 propFlex5="unset"
                 propDisplay3="inline-block"
                 propMinWidth3="33px"
+                onClick={redirectUserAppStore}
               />
               <ReviewCard
                 propWidth="unset"
@@ -515,6 +525,7 @@ const DesktopReviewPage = () => {
                 propFlex5="unset"
                 propDisplay3="inline-block"
                 propMinWidth3="33px"
+                onClick={redirectUserAppStore}
               />
               <ReviewCard
                 propWidth="unset"
@@ -554,6 +565,7 @@ const DesktopReviewPage = () => {
                 propFlex5="unset"
                 propDisplay3="inline-block"
                 propMinWidth3="33px"
+                onClick={redirectUserAppStore}
               />
               <ReviewCard
                 propWidth="unset"
@@ -593,6 +605,7 @@ const DesktopReviewPage = () => {
                 propFlex5="unset"
                 propDisplay3="inline-block"
                 propMinWidth3="33px"
+                onClick={redirectUserAppStore}
               />
               <ReviewCard
                 propWidth="unset"
@@ -632,6 +645,7 @@ const DesktopReviewPage = () => {
                 propFlex5="unset"
                 propDisplay3="inline-block"
                 propMinWidth3="33px"
+                onClick={redirectUserAppStore}
               />
             </div>
           </section>
@@ -682,7 +696,7 @@ const DesktopReviewPage = () => {
                   Support email
                 </div>
                 <div className="relative tracking-[0.2px] leading-[20px] text-dimgray whitespace-nowrap z-[1]">
-                  CoDMobile@activision.com
+                  support@plinsters.com
                 </div>
               </div>
             </div>

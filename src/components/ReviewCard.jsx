@@ -1,46 +1,47 @@
 import { useMemo } from "react";
-import PropTypes from "prop-types";
 
-const ReviewCard = ({
-  className = "",
-  propWidth,
-  propFlex,
-  propMinWidth,
-  propHeight,
-  propWidth1,
-  propAlignSelf,
-  propFlex1,
-  propAlignSelf1,
-  propFlex2,
-  propWidth2,
-  mirNowmanAli,
-  propAlignSelf2,
-  propFlex3,
-  propDisplay,
-  propMinWidth1,
-  propHeight1,
-  iconStartSmall2,
-  iconStartSmall3,
-  iconStartSmall4,
-  propWidth3,
-  propHeight2,
-  august2024,
-  propHeight3,
-  propFlex4,
-  propMinWidth2,
-  propDisplay1,
-  propAlignSelf3,
-  propHeight4,
-  callOfDutyMobileBringingFamili,
-  propHeight5,
-  propDisplay2,
-  propWidth4,
-  propHeight6,
-  propAlignSelf4,
-  propFlex5,
-  propDisplay3,
-  propMinWidth3,
-}) => {
+const ReviewCard = (props) => {
+  const {
+    className = "",
+    propWidth,
+    propFlex,
+    propMinWidth,
+    propHeight,
+    propWidth1,
+    propAlignSelf,
+    propFlex1,
+    propAlignSelf1,
+    propFlex2,
+    propWidth2,
+    mirNowmanAli,
+    propAlignSelf2,
+    propFlex3,
+    propDisplay,
+    propMinWidth1,
+    propHeight1,
+    iconStartSmall2,
+    iconStartSmall3,
+    iconStartSmall4,
+    propWidth3,
+    propHeight2,
+    august2024,
+    propHeight3,
+    propFlex4,
+    propMinWidth2,
+    propDisplay1,
+    propAlignSelf3,
+    propHeight4,
+    callOfDutyMobileBringingFamili,
+    propHeight5,
+    propDisplay2,
+    propWidth4,
+    propHeight6,
+    propAlignSelf4,
+    propFlex5,
+    propDisplay3,
+    propMinWidth3,
+    onClick,
+  } = props;
   const reviewCardStyle = useMemo(() => {
     return {
       width: propWidth,
@@ -209,57 +210,15 @@ const ReviewCard = ({
         style={buttonMoreStyle}
       >
         <div
-          className="self-stretch flex-1 relative tracking-[0.15px] leading-[20px]"
+          className="cursor-pointer hover:opacity-80 self-stretch flex-1 relative tracking-[0.15px] leading-[20px]"
           style={moreStyle}
+          onClick={onClick}
         >
           More
         </div>
       </div>
     </div>
   );
-};
-
-ReviewCard.propTypes = {
-  className: PropTypes.string,
-  mirNowmanAli: PropTypes.string,
-  iconStartSmall2: PropTypes.string,
-  iconStartSmall3: PropTypes.string,
-  iconStartSmall4: PropTypes.string,
-  august2024: PropTypes.string,
-  callOfDutyMobileBringingFamili: PropTypes.string,
-
-  /** Style props */
-  propWidth: PropTypes.any,
-  propFlex: PropTypes.any,
-  propMinWidth: PropTypes.any,
-  propHeight: PropTypes.any,
-  propWidth1: PropTypes.any,
-  propAlignSelf: PropTypes.any,
-  propFlex1: PropTypes.any,
-  propAlignSelf1: PropTypes.any,
-  propFlex2: PropTypes.any,
-  propWidth2: PropTypes.any,
-  propAlignSelf2: PropTypes.any,
-  propFlex3: PropTypes.any,
-  propDisplay: PropTypes.any,
-  propMinWidth1: PropTypes.any,
-  propHeight1: PropTypes.any,
-  propWidth3: PropTypes.any,
-  propHeight2: PropTypes.any,
-  propHeight3: PropTypes.any,
-  propFlex4: PropTypes.any,
-  propMinWidth2: PropTypes.any,
-  propDisplay1: PropTypes.any,
-  propAlignSelf3: PropTypes.any,
-  propHeight4: PropTypes.any,
-  propHeight5: PropTypes.any,
-  propDisplay2: PropTypes.any,
-  propWidth4: PropTypes.any,
-  propHeight6: PropTypes.any,
-  propAlignSelf4: PropTypes.any,
-  propFlex5: PropTypes.any,
-  propDisplay3: PropTypes.any,
-  propMinWidth3: PropTypes.any,
 };
 
 export default ReviewCard;

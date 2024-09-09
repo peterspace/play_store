@@ -28,7 +28,7 @@ const ReviewContent2 = ({ className = "" }) => {
               Support email
             </div>
             <div className="self-stretch h-5 relative tracking-[0.2px] leading-[20px] text-dimgray inline-block whitespace-nowrap z-[1]">
-              CoDMobile@activision.com
+              support@plinsters.com
             </div>
           </div>
           <div className="self-stretch flex-1 flex flex-row items-start justify-start py-0 pl-px pr-0">
@@ -43,7 +43,6 @@ const ReviewContent2 = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   );

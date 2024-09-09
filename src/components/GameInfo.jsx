@@ -56,7 +56,7 @@ const GameInfo = ({ className = "" }) => {
                 Support email
               </div>
               <div className="relative tracking-[0.2px] leading-[20px] text-dimgray whitespace-nowrap z-[1]">
-                CoDMobile@activision.com
+                support@plinsters.com
               </div>
             </div>
             <div className="self-stretch flex flex-row items-start justify-start py-0 pl-px pr-0">

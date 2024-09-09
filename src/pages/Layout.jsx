@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Lottie from "lottie-react";
-import animationData from "../assets/loader1.json";
 import arrowLoader from "../assets/arrow-loader.json";
 // import Register from "./Register";
 import BlackPage from "./BlackPage";
@@ -31,33 +30,9 @@ const Layout = () => {
   console.log({ errorMessage });
   console.log({ responseData });
 
-  // const registrationPageEvent = () => {
-  //   window.fbq("track", "RegistrationPage");
-  // };
-
   useEffect(() => {
     signUp();
   }, []);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     signUp();
-  //   }, 300);
-  // }, []);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     if (isLoading) {
-  //       setIsLoading(false);
-  //     }
-  //   }, 300);
-  // }, []);
-
-  // useEffect(() => {
-  //   if (!isLoading) {
-  //     signUp();
-  //   }
-  // }, [isLoading]);
 
   async function signUp() {
     setIsLoading(true);
@@ -104,17 +79,6 @@ const Layout = () => {
     }
   }
 
-  // useEffect(() => {
-  //   redirectUser();
-  // }, [redirectUrl]);
-
-  // async function redirectUser() {
-  //   if (userId && redirectUrl) {
-  //     // stor user to local storage
-  //     window.location.replace(redirectUrl);
-  //   }
-  // }
-
   const loadingComponent = (
     <div
       // className="w-screen relative [background:linear-gradient(180deg,_#1e1e1e,_#040303)] h-screen overflow-hidden flex flex-col items-center justify-center text-left text-13xl text-gray-100 font-poppins"
@@ -123,7 +87,6 @@ const Layout = () => {
       <div className="flex flex-row justify-center items-center text-2xl text-white font-bold">
         <div className="flex flex-col gap-4 items-start justify-start text-[18px]">
           {/* ==============={on component mount}====================== */}
-          {/* <Lottie animationData={animationData} /> */}
           <Lottie animationData={arrowLoader} />
         </div>
       </div>

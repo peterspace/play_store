@@ -117,6 +117,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="unset"
           propDisplay3="inline-block"
           propMinWidth3="33px"
+          onClick={redirectUserPlayStore}
         />
         <ReviewCard
           propWidth="300px"
@@ -156,6 +157,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="unset"
           propDisplay3="inline-block"
           propMinWidth3="33px"
+          onClick={redirectUserPlayStore}
         />
         <ReviewCard
           propWidth="300px"
@@ -195,6 +197,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="1"
           propDisplay3="unset"
           propMinWidth3="unset"
+          onClick={redirectUserPlayStore}
         />
         <ReviewCard
           propWidth="300px"
@@ -234,6 +237,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="1"
           propDisplay3="unset"
           propMinWidth3="unset"
+          onClick={redirectUserPlayStore}
         />
       </div>
       <div
@@ -290,6 +294,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="unset"
           propDisplay3="inline-block"
           propMinWidth3="33px"
+          onClick={redirectUserAppStore}
         />
         <ReviewCard
           propWidth="300px"
@@ -329,6 +334,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="unset"
           propDisplay3="inline-block"
           propMinWidth3="33px"
+          onClick={redirectUserAppStore}
         />
         <ReviewCard
           propWidth="300px"
@@ -368,6 +374,7 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="1"
           propDisplay3="unset"
           propMinWidth3="unset"
+          onClick={redirectUserAppStore}
         />
         <ReviewCard
           propWidth="300px"
@@ -407,9 +414,13 @@ const FrameComponent19 = ({ className = "" }) => {
           propFlex5="1"
           propDisplay3="unset"
           propMinWidth3="unset"
+          onClick={redirectUserAppStore}
         />
       </div>
-      <div className="cursor-pointer hover:opacity-80 flex flex-row items-start justify-start py-0 px-[22px] text-seagreen-300" onClick={redirectUserAppStore}>
+      <div
+        className="cursor-pointer hover:opacity-80 flex flex-row items-start justify-start py-0 px-[22px] text-seagreen-300"
+        onClick={redirectUserAppStore}
+      >
         <div className="relative tracking-[0.15px] leading-[20px]">
           See all reviews on apple store
         </div>
